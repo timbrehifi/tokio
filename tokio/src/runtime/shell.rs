@@ -6,13 +6,15 @@ use crate::runtime::time;
 use crate::util::{waker_ref, Wake};
 
 use std::future::Future;
-use std::sync::Arc;
+use std::sync::{Arc, Mutex};
 use std::task::Context;
 use std::task::Poll::Ready;
 
 #[derive(Debug)]
 pub(super) struct Shell {
-    driver: time::Driver,
+    driver: Mutex<time::Driver>,
+
+    notify: Notify,
 
     /// TODO: don't store this
     unpark: Arc<Handle>,
@@ -24,11 +26,12 @@ struct Handle(<time::Driver as Park>::Unpark);
 impl Shell {
     pub(super) fn new(driver: time::Driver) -> Shell {
         let unpark = Arc::new(Handle(driver.unpark()));
+        let driver = Mutex::new(driver);
 
         Shell { driver, unpark }
     }
 
-    pub(super) fn block_on<F>(&mut self, f: F) -> F::Output
+    pub(super) fn block_on<F>(&self, f: F) -> F::Output
     where
         F: Future,
     {
