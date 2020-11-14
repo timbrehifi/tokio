@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1605330117066,
+  "lastUpdate": 1605330128022,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -103,6 +103,62 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21483602,
             "range": "± 2722116",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ],
+    "sync_rwlock": [
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "97c2c4203cd7c42960cac895987c43a17dff052e",
+          "message": "chore: automate running benchmarks (#3140)\n\nUses Github actions to run benchmarks.",
+          "timestamp": "2020-11-13T19:30:52-08:00",
+          "tree_id": "f4a3cfebafb7afee68d6d4de1748daddcfc070c6",
+          "url": "https://github.com/timbrehifi/tokio/commit/97c2c4203cd7c42960cac895987c43a17dff052e"
+        },
+        "date": 1605330127157,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1062,
+            "range": "± 470",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 16480,
+            "range": "± 6045",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1104,
+            "range": "± 115",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 15937,
+            "range": "± 7206",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 599,
+            "range": "± 45",
             "unit": "ns/iter"
           }
         ]
