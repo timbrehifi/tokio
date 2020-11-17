@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1605330139262,
+  "lastUpdate": 1605574897565,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -159,6 +159,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 599,
             "range": "± 45",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0ea23076503c5151d68a781a3d91823396c82949",
+          "message": "net: add UdpSocket readiness and non-blocking ops (#3138)\n\nAdds `ready()`, `readable()`, and `writable()` async methods for waiting\r\nfor socket readiness. Adds `try_send`, `try_send_to`, `try_recv`, and\r\n`try_recv_from` for performing non-blocking operations on the socket.\r\n\r\nThis is the UDP equivalent of #3130.",
+          "timestamp": "2020-11-16T15:44:01-08:00",
+          "tree_id": "1e49d7dc0bb3cee6271133d942ba49c5971fde29",
+          "url": "https://github.com/timbrehifi/tokio/commit/0ea23076503c5151d68a781a3d91823396c82949"
+        },
+        "date": 1605574896013,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 985,
+            "range": "± 140",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14402,
+            "range": "± 5399",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 998,
+            "range": "± 158",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14394,
+            "range": "± 6209",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 564,
+            "range": "± 59",
             "unit": "ns/iter"
           }
         ]
