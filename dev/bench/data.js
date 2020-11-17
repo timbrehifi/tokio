@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1605574925476,
+  "lastUpdate": 1605574929734,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -157,6 +157,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21483602,
             "range": "± 2722116",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0ea23076503c5151d68a781a3d91823396c82949",
+          "message": "net: add UdpSocket readiness and non-blocking ops (#3138)\n\nAdds `ready()`, `readable()`, and `writable()` async methods for waiting\r\nfor socket readiness. Adds `try_send`, `try_send_to`, `try_recv`, and\r\n`try_recv_from` for performing non-blocking operations on the socket.\r\n\r\nThis is the UDP equivalent of #3130.",
+          "timestamp": "2020-11-16T15:44:01-08:00",
+          "tree_id": "1e49d7dc0bb3cee6271133d942ba49c5971fde29",
+          "url": "https://github.com/timbrehifi/tokio/commit/0ea23076503c5151d68a781a3d91823396c82949"
+        },
+        "date": 1605574926721,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 201953,
+            "range": "± 56879",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 727682,
+            "range": "± 73324",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4876651,
+            "range": "± 1272248",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20854300,
+            "range": "± 2262284",
             "unit": "ns/iter"
           }
         ]
