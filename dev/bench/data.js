@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1605574929734,
+  "lastUpdate": 1605574958802,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -401,6 +401,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 744587,
             "range": "± 60700",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0ea23076503c5151d68a781a3d91823396c82949",
+          "message": "net: add UdpSocket readiness and non-blocking ops (#3138)\n\nAdds `ready()`, `readable()`, and `writable()` async methods for waiting\r\nfor socket readiness. Adds `try_send`, `try_send_to`, `try_recv`, and\r\n`try_recv_from` for performing non-blocking operations on the socket.\r\n\r\nThis is the UDP equivalent of #3130.",
+          "timestamp": "2020-11-16T15:44:01-08:00",
+          "tree_id": "1e49d7dc0bb3cee6271133d942ba49c5971fde29",
+          "url": "https://github.com/timbrehifi/tokio/commit/0ea23076503c5151d68a781a3d91823396c82949"
+        },
+        "date": 1605574957147,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 7464437,
+            "range": "± 2780081",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 7247618,
+            "range": "± 1945492",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6603234,
+            "range": "± 2095692",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 944,
+            "range": "± 213",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 923,
+            "range": "± 153",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 933,
+            "range": "± 115",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 68354,
+            "range": "± 10087",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1131,
+            "range": "± 152",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1145422,
+            "range": "± 178354",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 826554,
+            "range": "± 118170",
             "unit": "ns/iter"
           }
         ]
