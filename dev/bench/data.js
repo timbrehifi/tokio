@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1605646939765,
+  "lastUpdate": 1605646944936,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -205,6 +205,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20854300,
             "range": "± 2262284",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "9832640+zekisherif@users.noreply.github.com",
+            "name": "Zeki Sherif",
+            "username": "zekisherif"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7d11aa866837eea50a6f1e0ef7e24846a653cbf1",
+          "message": "net: add SO_LINGER get/set to TcpStream (#3143)",
+          "timestamp": "2020-11-17T09:58:00-08:00",
+          "tree_id": "ca0d5edc04a29bbe6e2906c760a22908e032a4c9",
+          "url": "https://github.com/timbrehifi/tokio/commit/7d11aa866837eea50a6f1e0ef7e24846a653cbf1"
+        },
+        "date": 1605646941106,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 207603,
+            "range": "± 67166",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 760406,
+            "range": "± 169881",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5715916,
+            "range": "± 1240208",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21322087,
+            "range": "± 2469163",
             "unit": "ns/iter"
           }
         ]
