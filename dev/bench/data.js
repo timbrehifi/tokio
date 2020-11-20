@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1605906088502,
+  "lastUpdate": 1605906100274,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1019,6 +1019,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 799634,
             "range": "± 28045",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "eliza@buoyant.io",
+            "name": "Eliza Weisman",
+            "username": "hawkw"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f927f01a34d7cedf0cdc820f729a7a6cd56e83dd",
+          "message": "macros: fix rustfmt on 1.48.0 (#3160)\n\n## Motivation\r\n\r\nLooks like the Rust 1.48.0 version of `rustfmt` changed some formatting\r\nrules (fixed some bugs?), and some of the code in `tokio-macros` is no\r\nlonger correctly formatted. This is breaking CI.\r\n\r\n## Solution\r\n\r\nThis commit runs rustfmt on Rust 1.48.0. This fixes CI.\r\n\r\nCloses #3158",
+          "timestamp": "2020-11-20T10:19:26-08:00",
+          "tree_id": "bd0243a653ee49cfc50bf61b00a36cc0fce6a414",
+          "url": "https://github.com/timbrehifi/tokio/commit/f927f01a34d7cedf0cdc820f729a7a6cd56e83dd"
+        },
+        "date": 1605906099434,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 5901414,
+            "range": "± 2140944",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 5904426,
+            "range": "± 1250103",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5301680,
+            "range": "± 2263164",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 533,
+            "range": "± 11",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 531,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 531,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 45761,
+            "range": "± 389",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 721,
+            "range": "± 7",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 961696,
+            "range": "± 6985",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 695904,
+            "range": "± 7738",
             "unit": "ns/iter"
           }
         ]
