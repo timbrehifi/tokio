@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1605906100274,
+  "lastUpdate": 1605906107808,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -409,6 +409,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21294686,
             "range": "± 2239414",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "eliza@buoyant.io",
+            "name": "Eliza Weisman",
+            "username": "hawkw"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f927f01a34d7cedf0cdc820f729a7a6cd56e83dd",
+          "message": "macros: fix rustfmt on 1.48.0 (#3160)\n\n## Motivation\r\n\r\nLooks like the Rust 1.48.0 version of `rustfmt` changed some formatting\r\nrules (fixed some bugs?), and some of the code in `tokio-macros` is no\r\nlonger correctly formatted. This is breaking CI.\r\n\r\n## Solution\r\n\r\nThis commit runs rustfmt on Rust 1.48.0. This fixes CI.\r\n\r\nCloses #3158",
+          "timestamp": "2020-11-20T10:19:26-08:00",
+          "tree_id": "bd0243a653ee49cfc50bf61b00a36cc0fce6a414",
+          "url": "https://github.com/timbrehifi/tokio/commit/f927f01a34d7cedf0cdc820f729a7a6cd56e83dd"
+        },
+        "date": 1605906102926,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 185938,
+            "range": "± 11793",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 689838,
+            "range": "± 56479",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5245941,
+            "range": "± 1261275",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20286829,
+            "range": "± 2212505",
             "unit": "ns/iter"
           }
         ]
