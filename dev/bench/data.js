@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606165338527,
+  "lastUpdate": 1606165355252,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1361,6 +1361,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 695904,
             "range": "± 7738",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bdonlan@gmail.com",
+            "name": "bdonlan",
+            "username": "bdonlan"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ae67851f11b7cc1f577de8ce21767ce3e2c7aff9",
+          "message": "time: use intrusive lists for timer tracking (#3080)\n\nMore-or-less a half-rewrite of the current time driver, supporting the\r\nuse of intrusive futures for timer registration.\r\n\r\nFixes: #3028, #3069",
+          "timestamp": "2020-11-23T10:42:50-08:00",
+          "tree_id": "be43cb76333b0e9e42a101d659f9b2e41555d779",
+          "url": "https://github.com/timbrehifi/tokio/commit/ae67851f11b7cc1f577de8ce21767ce3e2c7aff9"
+        },
+        "date": 1606165353844,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6885222,
+            "range": "± 2673888",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 7087007,
+            "range": "± 1541515",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6314236,
+            "range": "± 2149826",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 866,
+            "range": "± 99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 868,
+            "range": "± 121",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 868,
+            "range": "± 146",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 65267,
+            "range": "± 12175",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1112,
+            "range": "± 150",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1190455,
+            "range": "± 168771",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 795687,
+            "range": "± 151487",
             "unit": "ns/iter"
           }
         ]
