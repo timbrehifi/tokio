@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606165327786,
+  "lastUpdate": 1606165338527,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -885,6 +885,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 438,
             "range": "± 77",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bdonlan@gmail.com",
+            "name": "bdonlan",
+            "username": "bdonlan"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ae67851f11b7cc1f577de8ce21767ce3e2c7aff9",
+          "message": "time: use intrusive lists for timer tracking (#3080)\n\nMore-or-less a half-rewrite of the current time driver, supporting the\r\nuse of intrusive futures for timer registration.\r\n\r\nFixes: #3028, #3069",
+          "timestamp": "2020-11-23T10:42:50-08:00",
+          "tree_id": "be43cb76333b0e9e42a101d659f9b2e41555d779",
+          "url": "https://github.com/timbrehifi/tokio/commit/ae67851f11b7cc1f577de8ce21767ce3e2c7aff9"
+        },
+        "date": 1606165337165,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1008,
+            "range": "± 197",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 17609,
+            "range": "± 7563",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1063,
+            "range": "± 168",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 16561,
+            "range": "± 6197",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 606,
+            "range": "± 55",
             "unit": "ns/iter"
           }
         ]
