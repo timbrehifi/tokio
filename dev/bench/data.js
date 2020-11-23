@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1605906118088,
+  "lastUpdate": 1606165322940,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -269,6 +269,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1030,
             "range": "± 188",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bdonlan@gmail.com",
+            "name": "bdonlan",
+            "username": "bdonlan"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ae67851f11b7cc1f577de8ce21767ce3e2c7aff9",
+          "message": "time: use intrusive lists for timer tracking (#3080)\n\nMore-or-less a half-rewrite of the current time driver, supporting the\r\nuse of intrusive futures for timer registration.\r\n\r\nFixes: #3028, #3069",
+          "timestamp": "2020-11-23T10:42:50-08:00",
+          "tree_id": "be43cb76333b0e9e42a101d659f9b2e41555d779",
+          "url": "https://github.com/timbrehifi/tokio/commit/ae67851f11b7cc1f577de8ce21767ce3e2c7aff9"
+        },
+        "date": 1606165321368,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 14841,
+            "range": "± 3071",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1082,
+            "range": "± 84",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 649,
+            "range": "± 69",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 15001,
+            "range": "± 5610",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1082,
+            "range": "± 90",
             "unit": "ns/iter"
           }
         ]
