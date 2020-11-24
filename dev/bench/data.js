@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606222927602,
+  "lastUpdate": 1606222933398,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -377,6 +377,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1008,
             "range": "± 182",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "github@max.sharnoff.org",
+            "name": "Max Sharnoff",
+            "username": "sharnoff"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "de33ee85ce61377b316b630e4355d419cc4abcb7",
+          "message": "time: replace 'ouClockTimeide' in internal docs with 'outside' (#3171)",
+          "timestamp": "2020-11-24T10:23:20+01:00",
+          "tree_id": "5ed85f95ea1846983471a11fe555328e6b0f5f6f",
+          "url": "https://github.com/timbrehifi/tokio/commit/de33ee85ce61377b316b630e4355d419cc4abcb7"
+        },
+        "date": 1606222922026,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 14616,
+            "range": "± 3279",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1034,
+            "range": "± 82",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 621,
+            "range": "± 50",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 14329,
+            "range": "± 3119",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1047,
+            "range": "± 76",
             "unit": "ns/iter"
           }
         ]
