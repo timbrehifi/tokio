@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606208518414,
+  "lastUpdate": 1606222923666,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -715,6 +715,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 16491704,
             "range": "± 3164063",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "github@max.sharnoff.org",
+            "name": "Max Sharnoff",
+            "username": "sharnoff"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "de33ee85ce61377b316b630e4355d419cc4abcb7",
+          "message": "time: replace 'ouClockTimeide' in internal docs with 'outside' (#3171)",
+          "timestamp": "2020-11-24T10:23:20+01:00",
+          "tree_id": "5ed85f95ea1846983471a11fe555328e6b0f5f6f",
+          "url": "https://github.com/timbrehifi/tokio/commit/de33ee85ce61377b316b630e4355d419cc4abcb7"
+        },
+        "date": 1606222922797,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 200460,
+            "range": "± 29783",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 737728,
+            "range": "± 66240",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5611819,
+            "range": "± 947299",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21260179,
+            "range": "± 3309583",
             "unit": "ns/iter"
           }
         ]
