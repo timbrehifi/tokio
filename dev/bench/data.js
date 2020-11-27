@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606509066910,
+  "lastUpdate": 1606509070263,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1509,6 +1509,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 548,
             "range": "± 124",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "niklas.fiekas@backscattering.de",
+            "name": "Niklas Fiekas",
+            "username": "niklasf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "49129434198a96444bc0e9582a14062d3a46e93a",
+          "message": "signal: expose CtrlC stream on windows (#3186)\n\n* Make tokio::signal::windows::ctrl_c() public.\r\n* Stop referring to private tokio::signal::windows::Event in module\r\n  documentation.\r\n\r\nCloses #3178",
+          "timestamp": "2020-11-27T19:53:17Z",
+          "tree_id": "904fb6b1fb539bffe69168c7202ccc3db15321dc",
+          "url": "https://github.com/timbrehifi/tokio/commit/49129434198a96444bc0e9582a14062d3a46e93a"
+        },
+        "date": 1606509066027,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 972,
+            "range": "± 121",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 13946,
+            "range": "± 3963",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 988,
+            "range": "± 72",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14535,
+            "range": "± 3441",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 567,
+            "range": "± 43",
             "unit": "ns/iter"
           }
         ]
