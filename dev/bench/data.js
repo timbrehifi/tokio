@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606509070263,
+  "lastUpdate": 1606509075179,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -2321,6 +2321,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 648158,
             "range": "± 164073",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "niklas.fiekas@backscattering.de",
+            "name": "Niklas Fiekas",
+            "username": "niklasf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "49129434198a96444bc0e9582a14062d3a46e93a",
+          "message": "signal: expose CtrlC stream on windows (#3186)\n\n* Make tokio::signal::windows::ctrl_c() public.\r\n* Stop referring to private tokio::signal::windows::Event in module\r\n  documentation.\r\n\r\nCloses #3178",
+          "timestamp": "2020-11-27T19:53:17Z",
+          "tree_id": "904fb6b1fb539bffe69168c7202ccc3db15321dc",
+          "url": "https://github.com/timbrehifi/tokio/commit/49129434198a96444bc0e9582a14062d3a46e93a"
+        },
+        "date": 1606509074293,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6693605,
+            "range": "± 2033606",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6781574,
+            "range": "± 1559441",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5954067,
+            "range": "± 2350478",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 644,
+            "range": "± 36",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 637,
+            "range": "± 25",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 636,
+            "range": "± 41",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 49689,
+            "range": "± 1813",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 822,
+            "range": "± 44",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1112950,
+            "range": "± 16470",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 798754,
+            "range": "± 9619",
             "unit": "ns/iter"
           }
         ]
