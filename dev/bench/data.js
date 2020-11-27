@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606509057178,
+  "lastUpdate": 1606509066910,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -973,6 +973,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20412758,
             "range": "± 1754069",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "niklas.fiekas@backscattering.de",
+            "name": "Niklas Fiekas",
+            "username": "niklasf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "49129434198a96444bc0e9582a14062d3a46e93a",
+          "message": "signal: expose CtrlC stream on windows (#3186)\n\n* Make tokio::signal::windows::ctrl_c() public.\r\n* Stop referring to private tokio::signal::windows::Event in module\r\n  documentation.\r\n\r\nCloses #3178",
+          "timestamp": "2020-11-27T19:53:17Z",
+          "tree_id": "904fb6b1fb539bffe69168c7202ccc3db15321dc",
+          "url": "https://github.com/timbrehifi/tokio/commit/49129434198a96444bc0e9582a14062d3a46e93a"
+        },
+        "date": 1606509066022,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 199278,
+            "range": "± 22284",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 726544,
+            "range": "± 146583",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5376948,
+            "range": "± 1276214",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21878420,
+            "range": "± 3051473",
             "unit": "ns/iter"
           }
         ]
