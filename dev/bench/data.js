@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606595464665,
+  "lastUpdate": 1606595470486,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1021,6 +1021,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21878420,
             "range": "± 3051473",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "github@max.sharnoff.org",
+            "name": "Max Sharnoff",
+            "username": "sharnoff"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0acd06b42a9d1461302388f2a533e86d391d6040",
+          "message": "runtime: fix shutdown_timeout(0) blocking (#3174)",
+          "timestamp": "2020-11-28T19:31:13+01:00",
+          "tree_id": "c17e5d58e10ee419e492cb831843c3f08e1f66d8",
+          "url": "https://github.com/timbrehifi/tokio/commit/0acd06b42a9d1461302388f2a533e86d391d6040"
+        },
+        "date": 1606595469622,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 190382,
+            "range": "± 6433",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 729964,
+            "range": "± 63527",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5515798,
+            "range": "± 1005129",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 22536569,
+            "range": "± 2844498",
             "unit": "ns/iter"
           }
         ]
