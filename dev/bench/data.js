@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606645473598,
+  "lastUpdate": 1606645486025,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -593,6 +593,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1000,
             "range": "± 167",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c55d846f4b248b4a72335d6c57829fa6396ab9a5",
+          "message": "util: add rt to tokio-util full feature (#3194)",
+          "timestamp": "2020-11-29T09:48:31+01:00",
+          "tree_id": "5f27b29cd1018796f0713d6e87e4823920ba5084",
+          "url": "https://github.com/timbrehifi/tokio/commit/c55d846f4b248b4a72335d6c57829fa6396ab9a5"
+        },
+        "date": 1606645485198,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15568,
+            "range": "± 2916",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1113,
+            "range": "± 125",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 628,
+            "range": "± 71",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 16424,
+            "range": "± 9164",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1117,
+            "range": "± 85",
             "unit": "ns/iter"
           }
         ]
