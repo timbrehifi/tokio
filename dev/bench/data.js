@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606692173824,
+  "lastUpdate": 1606692178573,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1977,6 +1977,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 494,
             "range": "± 104",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kylekosic@gmail.com",
+            "name": "Kyle Kosic",
+            "username": "kykosic"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a85fdb884d961bb87a2f3d446c548802868e54cb",
+          "message": "runtime: test for shutdown_timeout(0) (#3196)",
+          "timestamp": "2020-11-29T21:30:19+01:00",
+          "tree_id": "c554597c6596dc6eddc98bfafcc512361ddb5f31",
+          "url": "https://github.com/timbrehifi/tokio/commit/a85fdb884d961bb87a2f3d446c548802868e54cb"
+        },
+        "date": 1606692174041,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1007,
+            "range": "± 35",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14846,
+            "range": "± 5583",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1036,
+            "range": "± 82",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14257,
+            "range": "± 3333",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 593,
+            "range": "± 51",
             "unit": "ns/iter"
           }
         ]
