@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606692193371,
+  "lastUpdate": 1606764088227,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -701,6 +701,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1038,
             "range": "± 97",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pickfire@riseup.net",
+            "name": "Ivan Tham",
+            "username": "pickfire"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "72d6346c0d43d867002dc0cc5527fbd0b0e23c3f",
+          "message": "macros: #[tokio::main] can be used on non-main (#3199)",
+          "timestamp": "2020-11-30T17:34:11+01:00",
+          "tree_id": "c558d1cb380cc67bfc56ea960a7d9e266259367a",
+          "url": "https://github.com/timbrehifi/tokio/commit/72d6346c0d43d867002dc0cc5527fbd0b0e23c3f"
+        },
+        "date": 1606764086820,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15028,
+            "range": "± 3566",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1082,
+            "range": "± 93",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 647,
+            "range": "± 62",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 14667,
+            "range": "± 3753",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1084,
+            "range": "± 84",
             "unit": "ns/iter"
           }
         ]
