@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606771107709,
+  "lastUpdate": 1606778633516,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1531,6 +1531,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20024990,
             "range": "± 2654195",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "08548583b948a0be04338f1b1462917c001dbf4a",
+          "message": "chore: prepare v0.3.5 release (#3201)",
+          "timestamp": "2020-11-30T12:57:31-08:00",
+          "tree_id": "bc964338ba8d03930d53192a1e2288132330ff97",
+          "url": "https://github.com/timbrehifi/tokio/commit/08548583b948a0be04338f1b1462917c001dbf4a"
+        },
+        "date": 1606778632626,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 186918,
+            "range": "± 27624",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 706906,
+            "range": "± 226312",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5358126,
+            "range": "± 796031",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21335660,
+            "range": "± 2634222",
             "unit": "ns/iter"
           }
         ]
