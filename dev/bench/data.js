@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606764088227,
+  "lastUpdate": 1606764098272,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1381,6 +1381,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21611646,
             "range": "± 3001302",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pickfire@riseup.net",
+            "name": "Ivan Tham",
+            "username": "pickfire"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "72d6346c0d43d867002dc0cc5527fbd0b0e23c3f",
+          "message": "macros: #[tokio::main] can be used on non-main (#3199)",
+          "timestamp": "2020-11-30T17:34:11+01:00",
+          "tree_id": "c558d1cb380cc67bfc56ea960a7d9e266259367a",
+          "url": "https://github.com/timbrehifi/tokio/commit/72d6346c0d43d867002dc0cc5527fbd0b0e23c3f"
+        },
+        "date": 1606764096902,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 188912,
+            "range": "± 10019",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 733495,
+            "range": "± 171228",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5337367,
+            "range": "± 735688",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20695923,
+            "range": "± 2730373",
             "unit": "ns/iter"
           }
         ]
