@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606771076268,
+  "lastUpdate": 1606771081625,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1483,6 +1483,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20695923,
             "range": "± 2730373",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "73653352+HK416-is-all-you-need@users.noreply.github.com",
+            "name": "HK416-is-all-you-need",
+            "username": "HK416-is-all-you-need"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7707ba88efa9b9d78436f1fbdc873d81bfc3f7a5",
+          "message": "io: add AsyncFd::with_interest (#3167)\n\nFixes #3072",
+          "timestamp": "2020-11-30T11:11:18-08:00",
+          "tree_id": "45e9d190af02ab0cdc92c317e3127a1b8227ac3a",
+          "url": "https://github.com/timbrehifi/tokio/commit/7707ba88efa9b9d78436f1fbdc873d81bfc3f7a5"
+        },
+        "date": 1606771076841,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 183678,
+            "range": "± 19080",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 702722,
+            "range": "± 80741",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5262913,
+            "range": "± 590765",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20024990,
+            "range": "± 2654195",
             "unit": "ns/iter"
           }
         ]
