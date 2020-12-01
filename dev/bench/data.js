@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606800408248,
+  "lastUpdate": 1606800413042,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1687,6 +1687,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21335660,
             "range": "± 2634222",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a8e0f0a919663b210627c132d6af3e19a95d8037",
+          "message": "example: add back udp-codec example (#3205)",
+          "timestamp": "2020-12-01T12:20:20+09:00",
+          "tree_id": "b18851ef95641ab2e2d1f632e2ce39cb1fcb1301",
+          "url": "https://github.com/timbrehifi/tokio/commit/a8e0f0a919663b210627c132d6af3e19a95d8037"
+        },
+        "date": 1606800411578,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 195984,
+            "range": "± 43451",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 733855,
+            "range": "± 81470",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5565210,
+            "range": "± 1118944",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21059063,
+            "range": "± 3442597",
             "unit": "ns/iter"
           }
         ]
