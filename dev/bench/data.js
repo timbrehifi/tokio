@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606800404162,
+  "lastUpdate": 1606800408248,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -2499,6 +2499,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 476,
             "range": "± 92",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a8e0f0a919663b210627c132d6af3e19a95d8037",
+          "message": "example: add back udp-codec example (#3205)",
+          "timestamp": "2020-12-01T12:20:20+09:00",
+          "tree_id": "b18851ef95641ab2e2d1f632e2ce39cb1fcb1301",
+          "url": "https://github.com/timbrehifi/tokio/commit/a8e0f0a919663b210627c132d6af3e19a95d8037"
+        },
+        "date": 1606800406751,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1015,
+            "range": "± 193",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 15509,
+            "range": "± 5217",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 959,
+            "range": "± 147",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14491,
+            "range": "± 3662",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 559,
+            "range": "± 98",
             "unit": "ns/iter"
           }
         ]
