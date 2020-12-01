@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606778641474,
+  "lastUpdate": 1606800404162,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -863,6 +863,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1105,
             "range": "± 384",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a8e0f0a919663b210627c132d6af3e19a95d8037",
+          "message": "example: add back udp-codec example (#3205)",
+          "timestamp": "2020-12-01T12:20:20+09:00",
+          "tree_id": "b18851ef95641ab2e2d1f632e2ce39cb1fcb1301",
+          "url": "https://github.com/timbrehifi/tokio/commit/a8e0f0a919663b210627c132d6af3e19a95d8037"
+        },
+        "date": 1606800402727,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15348,
+            "range": "± 5545",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 974,
+            "range": "± 128",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 660,
+            "range": "± 46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 14916,
+            "range": "± 7955",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1081,
+            "range": "± 55",
             "unit": "ns/iter"
           }
         ]
