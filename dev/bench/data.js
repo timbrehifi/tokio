@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606800431480,
+  "lastUpdate": 1606966840987,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -2601,6 +2601,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 559,
             "range": "± 98",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rodrigblas@gmail.com",
+            "name": "Blas Rodriguez Irizar",
+            "username": "blasrodri"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a6051a61ec5c96113f4b543de3ec55431695347a",
+          "message": "sync: make add_permits panic with usize::MAX >> 3 permits (#3188)",
+          "timestamp": "2020-12-02T22:58:28+01:00",
+          "tree_id": "1a4d4bcc017f6a61a652505b1edd4a3bf36ea1ab",
+          "url": "https://github.com/timbrehifi/tokio/commit/a6051a61ec5c96113f4b543de3ec55431695347a"
+        },
+        "date": 1606966840159,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 744,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 12692,
+            "range": "± 2533",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 771,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13117,
+            "range": "± 3029",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 435,
+            "range": "± 14",
             "unit": "ns/iter"
           }
         ]
