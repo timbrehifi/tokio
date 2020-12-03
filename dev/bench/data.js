@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606971142044,
+  "lastUpdate": 1606971148873,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1837,6 +1837,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 15127408,
             "range": "± 2367038",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rodrigblas@gmail.com",
+            "name": "Blas Rodriguez Irizar",
+            "username": "blasrodri"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "a6051a61ec5c96113f4b543de3ec55431695347a",
+          "message": "sync: make add_permits panic with usize::MAX >> 3 permits (#3188)",
+          "timestamp": "2020-12-02T22:58:28+01:00",
+          "tree_id": "1a4d4bcc017f6a61a652505b1edd4a3bf36ea1ab",
+          "url": "https://github.com/timbrehifi/tokio/commit/a6051a61ec5c96113f4b543de3ec55431695347a"
+        },
+        "date": 1606971147931,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 190017,
+            "range": "± 6540",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 740024,
+            "range": "± 91832",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5548418,
+            "range": "± 783450",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20552715,
+            "range": "± 2782905",
             "unit": "ns/iter"
           }
         ]
