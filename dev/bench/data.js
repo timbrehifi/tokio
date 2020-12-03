@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606971152481,
+  "lastUpdate": 1606971162048,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -971,6 +971,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1086,
             "range": "± 6",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rodrigblas@gmail.com",
+            "name": "Blas Rodriguez Irizar",
+            "username": "blasrodri"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "a6051a61ec5c96113f4b543de3ec55431695347a",
+          "message": "sync: make add_permits panic with usize::MAX >> 3 permits (#3188)",
+          "timestamp": "2020-12-02T22:58:28+01:00",
+          "tree_id": "1a4d4bcc017f6a61a652505b1edd4a3bf36ea1ab",
+          "url": "https://github.com/timbrehifi/tokio/commit/a6051a61ec5c96113f4b543de3ec55431695347a"
+        },
+        "date": 1606971158037,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 17063,
+            "range": "± 5326",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1110,
+            "range": "± 88",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 766,
+            "range": "± 82",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 16926,
+            "range": "± 7514",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1091,
+            "range": "± 90",
             "unit": "ns/iter"
           }
         ]
