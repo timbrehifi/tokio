@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607055952266,
+  "lastUpdate": 1607056130293,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -2143,6 +2143,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20538908,
             "range": "± 3561689",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "eliza@buoyant.io",
+            "name": "Eliza Weisman",
+            "username": "hawkw"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "00500d1b35f00c68117d8f4e7320303e967e92e3",
+          "message": "util: prepare v0.5.1 release (#3210)\n\n### Added\r\n\r\n- io: `poll_read_buf` util fn (#2972).\r\n- io: `poll_write_buf` util fn with vectored write support (#3156).\r\n\r\nSigned-off-by: Eliza Weisman <eliza@buoyant.io>",
+          "timestamp": "2020-12-03T15:30:52-08:00",
+          "tree_id": "fe18e0f55daa4f26cf53bfe42a713338ac5460d9",
+          "url": "https://github.com/timbrehifi/tokio/commit/00500d1b35f00c68117d8f4e7320303e967e92e3"
+        },
+        "date": 1607056128997,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 186322,
+            "range": "± 25482",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 649305,
+            "range": "± 95256",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4798882,
+            "range": "± 1329887",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19527616,
+            "range": "± 3299942",
             "unit": "ns/iter"
           }
         ]
