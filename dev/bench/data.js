@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607056142707,
+  "lastUpdate": 1607056170490,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -5147,6 +5147,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 760684,
             "range": "± 37724",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "eliza@buoyant.io",
+            "name": "Eliza Weisman",
+            "username": "hawkw"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "00500d1b35f00c68117d8f4e7320303e967e92e3",
+          "message": "util: prepare v0.5.1 release (#3210)\n\n### Added\r\n\r\n- io: `poll_read_buf` util fn (#2972).\r\n- io: `poll_write_buf` util fn with vectored write support (#3156).\r\n\r\nSigned-off-by: Eliza Weisman <eliza@buoyant.io>",
+          "timestamp": "2020-12-03T15:30:52-08:00",
+          "tree_id": "fe18e0f55daa4f26cf53bfe42a713338ac5460d9",
+          "url": "https://github.com/timbrehifi/tokio/commit/00500d1b35f00c68117d8f4e7320303e967e92e3"
+        },
+        "date": 1607056169602,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6269406,
+            "range": "± 1717559",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6333423,
+            "range": "± 1577467",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5898479,
+            "range": "± 1974750",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 557,
+            "range": "± 63",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 558,
+            "range": "± 70",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 570,
+            "range": "± 93",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 45475,
+            "range": "± 5487",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 786,
+            "range": "± 102",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 990210,
+            "range": "± 134914",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 718076,
+            "range": "± 109476",
             "unit": "ns/iter"
           }
         ]
