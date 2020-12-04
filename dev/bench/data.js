@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607076129837,
+  "lastUpdate": 1607076137667,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1241,6 +1241,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 881,
             "range": "± 131",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "udoprog@tedro.se",
+            "name": "John-John Tedro",
+            "username": "udoprog"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "a125ebd745f31098aa170cb1009ff0fe34508d37",
+          "message": "rt: fix panic in task abort when off rt (#3159)\n\nA call to `JoinHandle::abort` releases a task. When called from outside of the runtime,\r\nthis panics due to the current implementation checking for a thread-local worker context.\r\n\r\nThis change makes accessing the thread-local context optional under release, by falling\r\nback to remotely marking a task remotely as dropped. Behaving the same as if the core\r\nwas stolen by another worker.\r\n\r\nFixes #3157",
+          "timestamp": "2020-12-03T21:29:59-08:00",
+          "tree_id": "8dab5d17383a5f63f7554ec009cf6e1408c46d96",
+          "url": "https://github.com/timbrehifi/tokio/commit/a125ebd745f31098aa170cb1009ff0fe34508d37"
+        },
+        "date": 1607076136209,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15246,
+            "range": "± 5037",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1085,
+            "range": "± 13",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 647,
+            "range": "± 14",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 16579,
+            "range": "± 3883",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1103,
+            "range": "± 9",
             "unit": "ns/iter"
           }
         ]
