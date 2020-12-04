@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607073975134,
+  "lastUpdate": 1607073994937,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -5333,6 +5333,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 718076,
             "range": "± 109476",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "udoprog@tedro.se",
+            "name": "John-John Tedro",
+            "username": "udoprog"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a125ebd745f31098aa170cb1009ff0fe34508d37",
+          "message": "rt: fix panic in task abort when off rt (#3159)\n\nA call to `JoinHandle::abort` releases a task. When called from outside of the runtime,\r\nthis panics due to the current implementation checking for a thread-local worker context.\r\n\r\nThis change makes accessing the thread-local context optional under release, by falling\r\nback to remotely marking a task remotely as dropped. Behaving the same as if the core\r\nwas stolen by another worker.\r\n\r\nFixes #3157",
+          "timestamp": "2020-12-03T21:29:59-08:00",
+          "tree_id": "8dab5d17383a5f63f7554ec009cf6e1408c46d96",
+          "url": "https://github.com/timbrehifi/tokio/commit/a125ebd745f31098aa170cb1009ff0fe34508d37"
+        },
+        "date": 1607073994050,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 7547476,
+            "range": "± 3272448",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6831038,
+            "range": "± 1902036",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6332379,
+            "range": "± 2598230",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 714,
+            "range": "± 157",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 705,
+            "range": "± 122",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 573,
+            "range": "± 29",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 42126,
+            "range": "± 2998",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 907,
+            "range": "± 30",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1189516,
+            "range": "± 208090",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 840632,
+            "range": "± 163415",
             "unit": "ns/iter"
           }
         ]
