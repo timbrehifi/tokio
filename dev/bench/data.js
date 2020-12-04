@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607056130293,
+  "lastUpdate": 1607056135288,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1133,6 +1133,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1135,
             "range": "± 3",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "eliza@buoyant.io",
+            "name": "Eliza Weisman",
+            "username": "hawkw"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "00500d1b35f00c68117d8f4e7320303e967e92e3",
+          "message": "util: prepare v0.5.1 release (#3210)\n\n### Added\r\n\r\n- io: `poll_read_buf` util fn (#2972).\r\n- io: `poll_write_buf` util fn with vectored write support (#3156).\r\n\r\nSigned-off-by: Eliza Weisman <eliza@buoyant.io>",
+          "timestamp": "2020-12-03T15:30:52-08:00",
+          "tree_id": "fe18e0f55daa4f26cf53bfe42a713338ac5460d9",
+          "url": "https://github.com/timbrehifi/tokio/commit/00500d1b35f00c68117d8f4e7320303e967e92e3"
+        },
+        "date": 1607056133862,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15415,
+            "range": "± 3865",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1091,
+            "range": "± 30",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 649,
+            "range": "± 65",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 14752,
+            "range": "± 3413",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1087,
+            "range": "± 37",
             "unit": "ns/iter"
           }
         ]
