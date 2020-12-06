@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607268213467,
+  "lastUpdate": 1607268233325,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -2503,6 +2503,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18092708,
             "range": "± 3715593",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "liufuyang@users.noreply.github.com",
+            "name": "Fuyang Liu",
+            "username": "liufuyang"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0707f4c19210d6dac620c663e94d34834714a7c9",
+          "message": "net: add TcpStream::into_std (#3189)",
+          "timestamp": "2020-12-06T14:33:04+01:00",
+          "tree_id": "a3aff2f279b1e560602b4752435e092b4a22424e",
+          "url": "https://github.com/timbrehifi/tokio/commit/0707f4c19210d6dac620c663e94d34834714a7c9"
+        },
+        "date": 1607268232411,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 176966,
+            "range": "± 47907",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 666245,
+            "range": "± 168051",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4821812,
+            "range": "± 1351633",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19569360,
+            "range": "± 3075811",
             "unit": "ns/iter"
           }
         ]
