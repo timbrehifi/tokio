@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607408915860,
+  "lastUpdate": 1607408920147,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -6293,6 +6293,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 815123,
             "range": "± 2967",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rodrigblas@gmail.com",
+            "name": "Blas Rodriguez Irizar",
+            "username": "blasrodri"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e01391351bcb0715f737cefe94e1bc99f19af226",
+          "message": "Add stress test (#3222)\n\nCreated a simple echo TCP server that on two different runtimes that is\r\ncalled from a GitHub action using Valgrind to ensure that there are\r\nno memory leaks.\r\n\r\nFixes: #3022",
+          "timestamp": "2020-12-07T21:12:22-08:00",
+          "tree_id": "5575f27e36e49b887062119225e1d61335a01b9a",
+          "url": "https://github.com/timbrehifi/tokio/commit/e01391351bcb0715f737cefe94e1bc99f19af226"
+        },
+        "date": 1607408916185,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6129047,
+            "range": "± 2403105",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 5915384,
+            "range": "± 1428615",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5562494,
+            "range": "± 2810408",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 705,
+            "range": "± 112",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 696,
+            "range": "± 105",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 711,
+            "range": "± 188",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 55801,
+            "range": "± 31204",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 852,
+            "range": "± 332",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 911887,
+            "range": "± 161197",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 656111,
+            "range": "± 106320",
             "unit": "ns/iter"
           }
         ]
