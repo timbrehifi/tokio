@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607388813722,
+  "lastUpdate": 1607388826299,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -2605,6 +2605,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19569360,
             "range": "± 3075811",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "62023dffe5396ee1a0380f12c7530bf4ff59fe4a",
+          "message": "sync: forward port 0.2 mpsc test (#3225)\n\nForward ports the test included in #3215. The mpsc sempahore has been\r\nreplaced in 0.3 and does not include the bug being fixed.",
+          "timestamp": "2020-12-07T11:24:15-08:00",
+          "tree_id": "c891a48ce299e6cfd01090a880d1baf16ebe0ad7",
+          "url": "https://github.com/timbrehifi/tokio/commit/62023dffe5396ee1a0380f12c7530bf4ff59fe4a"
+        },
+        "date": 1607388822354,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 144905,
+            "range": "± 18614",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 594604,
+            "range": "± 41497",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4479870,
+            "range": "± 942402",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17608985,
+            "range": "± 2284944",
             "unit": "ns/iter"
           }
         ]
