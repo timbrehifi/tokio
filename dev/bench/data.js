@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607388842898,
+  "lastUpdate": 1607408907796,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1403,6 +1403,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1090,
             "range": "± 6",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rodrigblas@gmail.com",
+            "name": "Blas Rodriguez Irizar",
+            "username": "blasrodri"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e01391351bcb0715f737cefe94e1bc99f19af226",
+          "message": "Add stress test (#3222)\n\nCreated a simple echo TCP server that on two different runtimes that is\r\ncalled from a GitHub action using Valgrind to ensure that there are\r\nno memory leaks.\r\n\r\nFixes: #3022",
+          "timestamp": "2020-12-07T21:12:22-08:00",
+          "tree_id": "5575f27e36e49b887062119225e1d61335a01b9a",
+          "url": "https://github.com/timbrehifi/tokio/commit/e01391351bcb0715f737cefe94e1bc99f19af226"
+        },
+        "date": 1607408906868,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 14002,
+            "range": "± 4697",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 947,
+            "range": "± 135",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 586,
+            "range": "± 81",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 14264,
+            "range": "± 4137",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 919,
+            "range": "± 107",
             "unit": "ns/iter"
           }
         ]
