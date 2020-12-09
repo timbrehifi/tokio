@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607481679039,
+  "lastUpdate": 1607481683481,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -2809,6 +2809,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 22129321,
             "range": "± 3293532",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bdonlan@gmail.com",
+            "name": "bdonlan",
+            "username": "bdonlan"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9706ca92a8deb69d6e29265f21424042fea966c5",
+          "message": "time: Fix race condition in timer drop (#3229)\n\nDropping a timer on the millisecond that it was scheduled for, when it was on\r\nthe pending list, could result in a panic previously, as we did not record the\r\npending-list state in cached_when.\r\n\r\nHopefully fixes: ZcashFoundation/zebra#1452",
+          "timestamp": "2020-12-08T16:42:43-08:00",
+          "tree_id": "cd77e2148b7cdf03d0fcb38e8e27cf3f7eed1ed9",
+          "url": "https://github.com/timbrehifi/tokio/commit/9706ca92a8deb69d6e29265f21424042fea966c5"
+        },
+        "date": 1607481682590,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 177182,
+            "range": "± 43984",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 692640,
+            "range": "± 216094",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4997028,
+            "range": "± 1329194",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18327772,
+            "range": "± 3151375",
             "unit": "ns/iter"
           }
         ]
