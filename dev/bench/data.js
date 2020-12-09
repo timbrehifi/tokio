@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607408920147,
+  "lastUpdate": 1607481675314,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -4107,6 +4107,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 570,
             "range": "± 102",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bdonlan@gmail.com",
+            "name": "bdonlan",
+            "username": "bdonlan"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9706ca92a8deb69d6e29265f21424042fea966c5",
+          "message": "time: Fix race condition in timer drop (#3229)\n\nDropping a timer on the millisecond that it was scheduled for, when it was on\r\nthe pending list, could result in a panic previously, as we did not record the\r\npending-list state in cached_when.\r\n\r\nHopefully fixes: ZcashFoundation/zebra#1452",
+          "timestamp": "2020-12-08T16:42:43-08:00",
+          "tree_id": "cd77e2148b7cdf03d0fcb38e8e27cf3f7eed1ed9",
+          "url": "https://github.com/timbrehifi/tokio/commit/9706ca92a8deb69d6e29265f21424042fea966c5"
+        },
+        "date": 1607481674427,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 917,
+            "range": "± 150",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14335,
+            "range": "± 3746",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 988,
+            "range": "± 157",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14363,
+            "range": "± 5623",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 554,
+            "range": "± 66",
             "unit": "ns/iter"
           }
         ]
