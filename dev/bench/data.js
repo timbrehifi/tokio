@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607627416261,
+  "lastUpdate": 1607627419924,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -3115,6 +3115,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21330359,
             "range": "± 3206431",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "yusuktan@maguro.dev",
+            "name": "Yusuke Tanaka",
+            "username": "magurotuna"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4b1d76ec8f35052480eb14204d147df658bfdfdd",
+          "message": "docs: fix typo in signal module documentation (#3249)",
+          "timestamp": "2020-12-10T08:11:45-08:00",
+          "tree_id": "46efd6f41cfaf702fb40c62b89800c511309d584",
+          "url": "https://github.com/timbrehifi/tokio/commit/4b1d76ec8f35052480eb14204d147df658bfdfdd"
+        },
+        "date": 1607627411589,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 187012,
+            "range": "± 8964",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 718302,
+            "range": "± 57257",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5509166,
+            "range": "± 1107661",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20523360,
+            "range": "± 3242035",
             "unit": "ns/iter"
           }
         ]
