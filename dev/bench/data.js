@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607564870466,
+  "lastUpdate": 1607564896053,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -6773,6 +6773,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 796721,
             "range": "± 26162",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "50183564+nylonicious@users.noreply.github.com",
+            "name": "Nylonicious",
+            "username": "nylonicious"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "52cd240053b2e1dd5835186539f563c3496dfd7d",
+          "message": "task: add missing feature flags for task_local and spawn_blocking (#3237)",
+          "timestamp": "2020-12-09T23:49:28+01:00",
+          "tree_id": "bbc90b40091bd716d0269b84da2bafb32288b149",
+          "url": "https://github.com/timbrehifi/tokio/commit/52cd240053b2e1dd5835186539f563c3496dfd7d"
+        },
+        "date": 1607564895062,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6690739,
+            "range": "± 1846172",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6630779,
+            "range": "± 1522985",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6039837,
+            "range": "± 1484769",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 537,
+            "range": "± 48",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 529,
+            "range": "± 72",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 535,
+            "range": "± 50",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 48738,
+            "range": "± 3127",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 876,
+            "range": "± 56",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1071643,
+            "range": "± 89912",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 771091,
+            "range": "± 69268",
             "unit": "ns/iter"
           }
         ]
