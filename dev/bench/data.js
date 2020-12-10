@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607564860702,
+  "lastUpdate": 1607564865164,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -4317,6 +4317,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 554,
             "range": "± 66",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "50183564+nylonicious@users.noreply.github.com",
+            "name": "Nylonicious",
+            "username": "nylonicious"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "52cd240053b2e1dd5835186539f563c3496dfd7d",
+          "message": "task: add missing feature flags for task_local and spawn_blocking (#3237)",
+          "timestamp": "2020-12-09T23:49:28+01:00",
+          "tree_id": "bbc90b40091bd716d0269b84da2bafb32288b149",
+          "url": "https://github.com/timbrehifi/tokio/commit/52cd240053b2e1dd5835186539f563c3496dfd7d"
+        },
+        "date": 1607564860879,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1013,
+            "range": "± 53",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14496,
+            "range": "± 3386",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1009,
+            "range": "± 46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13995,
+            "range": "± 4022",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 592,
+            "range": "± 45",
             "unit": "ns/iter"
           }
         ]
