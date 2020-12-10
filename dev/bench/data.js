@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607596097741,
+  "lastUpdate": 1607596103342,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -3013,6 +3013,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21040958,
             "range": "± 2704460",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "clemens.koza@gmx.at",
+            "name": "Clemens Koza",
+            "username": "SillyFreak"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9646b4bce342342cc654c4c0834c0bf3627f7aa0",
+          "message": "toml: enable test-util feature for the playground (#3224)",
+          "timestamp": "2020-12-10T10:39:05+01:00",
+          "tree_id": "0c5c06ea6a86a13b9485506cf2066945eaf53189",
+          "url": "https://github.com/timbrehifi/tokio/commit/9646b4bce342342cc654c4c0834c0bf3627f7aa0"
+        },
+        "date": 1607596099052,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 195501,
+            "range": "± 35313",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 759828,
+            "range": "± 113098",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5541653,
+            "range": "± 920898",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21330359,
+            "range": "± 3206431",
             "unit": "ns/iter"
           }
         ]
