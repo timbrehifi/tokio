@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607627411677,
+  "lastUpdate": 1607627416261,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1619,6 +1619,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 909,
             "range": "± 5",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "yusuktan@maguro.dev",
+            "name": "Yusuke Tanaka",
+            "username": "magurotuna"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4b1d76ec8f35052480eb14204d147df658bfdfdd",
+          "message": "docs: fix typo in signal module documentation (#3249)",
+          "timestamp": "2020-12-10T08:11:45-08:00",
+          "tree_id": "46efd6f41cfaf702fb40c62b89800c511309d584",
+          "url": "https://github.com/timbrehifi/tokio/commit/4b1d76ec8f35052480eb14204d147df658bfdfdd"
+        },
+        "date": 1607627414854,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 14388,
+            "range": "± 5541",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1042,
+            "range": "± 201",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 603,
+            "range": "± 81",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 14940,
+            "range": "± 3965",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1052,
+            "range": "± 74",
             "unit": "ns/iter"
           }
         ]
