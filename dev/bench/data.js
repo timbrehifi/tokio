@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607668948894,
+  "lastUpdate": 1607720885752,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -5043,6 +5043,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 466,
             "range": "± 78",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cameron.evan@gmail.com",
+            "name": "Evan Cameron",
+            "username": "leshow"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "68717c7efaced76651915696495dcb04c890be25",
+          "message": "net: remove empty udp module (#3260)",
+          "timestamp": "2020-12-11T14:45:57-05:00",
+          "tree_id": "1b7333194ac78d7ae87c5ca9f423ef830cb486b8",
+          "url": "https://github.com/timbrehifi/tokio/commit/68717c7efaced76651915696495dcb04c890be25"
+        },
+        "date": 1607720884656,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 837,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 13038,
+            "range": "± 2498",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 866,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13074,
+            "range": "± 2890",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 495,
+            "range": "± 8",
             "unit": "ns/iter"
           }
         ]
