@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607648074914,
+  "lastUpdate": 1607648078090,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -3217,6 +3217,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20523360,
             "range": "± 3242035",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "50183564+nylonicious@users.noreply.github.com",
+            "name": "Nylonicious",
+            "username": "nylonicious"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "16c2e0983cc0ab22f9a0b7a1ac37ea32a42b9a6e",
+          "message": "net: Pass SocketAddr by value (#3125)",
+          "timestamp": "2020-12-10T14:58:27-05:00",
+          "tree_id": "d46d58a79f31dba872aa060ef378743fcedea70e",
+          "url": "https://github.com/timbrehifi/tokio/commit/16c2e0983cc0ab22f9a0b7a1ac37ea32a42b9a6e"
+        },
+        "date": 1607648077030,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 157255,
+            "range": "± 2294",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 629175,
+            "range": "± 20785",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4570408,
+            "range": "± 387510",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17669104,
+            "range": "± 2700800",
             "unit": "ns/iter"
           }
         ]
