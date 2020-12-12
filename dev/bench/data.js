@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607752070917,
+  "lastUpdate": 1607752088141,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -3523,6 +3523,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18650236,
             "range": "± 2525074",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c1ec469ad2af883b001d54e81dad426c01f918cd",
+          "message": "util: add constructors to TokioContext (#3221)",
+          "timestamp": "2020-12-11T20:41:22-08:00",
+          "tree_id": "cdb1273c1a4eea6c7175578bc8a13f417c3daf00",
+          "url": "https://github.com/timbrehifi/tokio/commit/c1ec469ad2af883b001d54e81dad426c01f918cd"
+        },
+        "date": 1607752087269,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 157717,
+            "range": "± 3108",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 621166,
+            "range": "± 28003",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5025147,
+            "range": "± 1023409",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18909808,
+            "range": "± 2725182",
             "unit": "ns/iter"
           }
         ]
