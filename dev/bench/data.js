@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607793692514,
+  "lastUpdate": 1607876882837,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -5511,6 +5511,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 590,
             "range": "± 45",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "6172808+skerkour@users.noreply.github.com",
+            "name": "Sylvain Kerkour",
+            "username": "skerkour"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9149d7bfae251289cd21aa9ee109b4e2a190d0fa",
+          "message": "docs: mention blocking thread timeout in src/lib.rs (#3253)",
+          "timestamp": "2020-12-13T16:24:16+01:00",
+          "tree_id": "38b69f17cc4644ac6ca081aa1d88d5cfe35825fa",
+          "url": "https://github.com/timbrehifi/tokio/commit/9149d7bfae251289cd21aa9ee109b4e2a190d0fa"
+        },
+        "date": 1607876881760,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 982,
+            "range": "± 104",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 15736,
+            "range": "± 5250",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1038,
+            "range": "± 163",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 15309,
+            "range": "± 5377",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 623,
+            "range": "± 61",
             "unit": "ns/iter"
           }
         ]
