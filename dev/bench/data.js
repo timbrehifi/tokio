@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607876900187,
+  "lastUpdate": 1607971312263,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -1997,6 +1997,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1144,
             "range": "± 719",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3f29212cb7743462451293b65d4bb8b5b4973fc5",
+          "message": "fs: use cfgs on fns instead of OS ext traits (#3264)\n\nInstead of using OS specific extension traits, OS specific methods are\r\nmoved onto the structs themselves and guarded with `cfg`. The API\r\ndocumentation should highlight the function is platform specific.\r\n\r\nCloses #2925",
+          "timestamp": "2020-12-14T09:29:10-08:00",
+          "tree_id": "a09b2ea3cce14487af2ace8030dd2ba6a3687cb5",
+          "url": "https://github.com/timbrehifi/tokio/commit/3f29212cb7743462451293b65d4bb8b5b4973fc5"
+        },
+        "date": 1607971307484,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15603,
+            "range": "± 5785",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1083,
+            "range": "± 81",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 646,
+            "range": "± 50",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 15620,
+            "range": "± 5174",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1084,
+            "range": "± 54",
             "unit": "ns/iter"
           }
         ]
