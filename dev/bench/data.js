@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608105686700,
+  "lastUpdate": 1608105691898,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -8987,6 +8987,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 808552,
             "range": "± 30476",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "luciofranco14@gmail.com",
+            "name": "Lucio Franco",
+            "username": "LucioFranco"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8efa62013b551d5130791c3a79ce8ab5cb0b5abf",
+          "message": "Move stream items into `tokio-stream` (#3277)\n\nThis change removes all references to `Stream` from\r\nwithin the `tokio` crate and moves them into a new\r\n`tokio-stream` crate. Most types have had their\r\n`impl Stream` removed as well in-favor of their\r\ninherent methods.\r\n\r\nCloses #2870",
+          "timestamp": "2020-12-15T20:24:38-08:00",
+          "tree_id": "6da8c41c8e1808bea98fd2d23ee1ec03a1cc7e80",
+          "url": "https://github.com/timbrehifi/tokio/commit/8efa62013b551d5130791c3a79ce8ab5cb0b5abf"
+        },
+        "date": 1608105689647,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 7204740,
+            "range": "± 2165018",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 7146302,
+            "range": "± 1543952",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6662745,
+            "range": "± 2380735",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 772,
+            "range": "± 61",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 753,
+            "range": "± 7",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 752,
+            "range": "± 10",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 85860,
+            "range": "± 4218",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1501,
+            "range": "± 115",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1190096,
+            "range": "± 7935",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 860980,
+            "range": "± 9250",
             "unit": "ns/iter"
           }
         ]
