@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607971312263,
+  "lastUpdate": 1608105658885,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -2051,6 +2051,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1084,
             "range": "± 54",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "luciofranco14@gmail.com",
+            "name": "Lucio Franco",
+            "username": "LucioFranco"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8efa62013b551d5130791c3a79ce8ab5cb0b5abf",
+          "message": "Move stream items into `tokio-stream` (#3277)\n\nThis change removes all references to `Stream` from\r\nwithin the `tokio` crate and moves them into a new\r\n`tokio-stream` crate. Most types have had their\r\n`impl Stream` removed as well in-favor of their\r\ninherent methods.\r\n\r\nCloses #2870",
+          "timestamp": "2020-12-15T20:24:38-08:00",
+          "tree_id": "6da8c41c8e1808bea98fd2d23ee1ec03a1cc7e80",
+          "url": "https://github.com/timbrehifi/tokio/commit/8efa62013b551d5130791c3a79ce8ab5cb0b5abf"
+        },
+        "date": 1608105657693,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 14478,
+            "range": "± 4261",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1081,
+            "range": "± 115",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 627,
+            "range": "± 91",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 14421,
+            "range": "± 5564",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1081,
+            "range": "± 208",
             "unit": "ns/iter"
           }
         ]
