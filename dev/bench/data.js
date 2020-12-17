@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608204709557,
+  "lastUpdate": 1608204742555,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -3985,6 +3985,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19155031,
             "range": "± 2573866",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d74d17307dd53215061c4a8a1f20a0e30461e296",
+          "message": "time: remove `Box` from `Sleep` (#3278)\n\nRemoves the box from `Sleep`, taking advantage of intrusive wakers. The\r\n`Sleep` future is now `!Unpin`.\r\n\r\nCloses #3267",
+          "timestamp": "2020-12-16T21:51:34-08:00",
+          "tree_id": "0cdbf57e4a9b38302ddae0078eb5a1b9a4977aa2",
+          "url": "https://github.com/timbrehifi/tokio/commit/d74d17307dd53215061c4a8a1f20a0e30461e296"
+        },
+        "date": 1608204741642,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 193750,
+            "range": "± 45650",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 697685,
+            "range": "± 51050",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5332827,
+            "range": "± 495656",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20114738,
+            "range": "± 3377812",
             "unit": "ns/iter"
           }
         ]
