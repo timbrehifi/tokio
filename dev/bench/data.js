@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608105691898,
+  "lastUpdate": 1608204705425,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -2105,6 +2105,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1081,
             "range": "± 208",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d74d17307dd53215061c4a8a1f20a0e30461e296",
+          "message": "time: remove `Box` from `Sleep` (#3278)\n\nRemoves the box from `Sleep`, taking advantage of intrusive wakers. The\r\n`Sleep` future is now `!Unpin`.\r\n\r\nCloses #3267",
+          "timestamp": "2020-12-16T21:51:34-08:00",
+          "tree_id": "0cdbf57e4a9b38302ddae0078eb5a1b9a4977aa2",
+          "url": "https://github.com/timbrehifi/tokio/commit/d74d17307dd53215061c4a8a1f20a0e30461e296"
+        },
+        "date": 1608204704067,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 13852,
+            "range": "± 5434",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 968,
+            "range": "± 320",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 497,
+            "range": "± 54",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 13482,
+            "range": "± 4223",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 830,
+            "range": "± 141",
             "unit": "ns/iter"
           }
         ]
