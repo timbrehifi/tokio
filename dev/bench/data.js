@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608204742555,
+  "lastUpdate": 1608204767977,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -9227,6 +9227,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 860980,
             "range": "± 9250",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d74d17307dd53215061c4a8a1f20a0e30461e296",
+          "message": "time: remove `Box` from `Sleep` (#3278)\n\nRemoves the box from `Sleep`, taking advantage of intrusive wakers. The\r\n`Sleep` future is now `!Unpin`.\r\n\r\nCloses #3267",
+          "timestamp": "2020-12-16T21:51:34-08:00",
+          "tree_id": "0cdbf57e4a9b38302ddae0078eb5a1b9a4977aa2",
+          "url": "https://github.com/timbrehifi/tokio/commit/d74d17307dd53215061c4a8a1f20a0e30461e296"
+        },
+        "date": 1608204764020,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 7077747,
+            "range": "± 2767613",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 7083207,
+            "range": "± 2661976",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6495216,
+            "range": "± 3272605",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 824,
+            "range": "± 221",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 865,
+            "range": "± 191",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 854,
+            "range": "± 169",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 146091,
+            "range": "± 15140",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1593,
+            "range": "± 292",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1110170,
+            "range": "± 139919",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 775854,
+            "range": "± 115050",
             "unit": "ns/iter"
           }
         ]
