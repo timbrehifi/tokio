@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608263063647,
+  "lastUpdate": 1608263067232,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -9659,6 +9659,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 784318,
             "range": "± 120864",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "abd4c0025539f142ec48a09e01430f7ee3b83214",
+          "message": "time: enforce `current_thread` rt for time::pause (#3289)\n\nPausing time is a capability added to assist with testing Tokio code\r\ndependent on time. Currently, the capability implicitly requires the\r\ncurrent_thread runtime.\r\n\r\nThis change enforces the requirement by panicking if called from a\r\nmulti-threaded runtime.",
+          "timestamp": "2020-12-17T15:37:08-08:00",
+          "tree_id": "6c565d6c74dff336ac847cb6463245283d8470d5",
+          "url": "https://github.com/timbrehifi/tokio/commit/abd4c0025539f142ec48a09e01430f7ee3b83214"
+        },
+        "date": 1608263063279,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 5660554,
+            "range": "± 2020930",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 5777471,
+            "range": "± 1463606",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5259237,
+            "range": "± 1981017",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 516,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 515,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 515,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 70908,
+            "range": "± 4373",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1088,
+            "range": "± 166",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 838725,
+            "range": "± 5680",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 689223,
+            "range": "± 27875",
             "unit": "ns/iter"
           }
         ]
