@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608263067232,
+  "lastUpdate": 1608263070918,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -4189,6 +4189,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18240403,
             "range": "± 2328470",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "abd4c0025539f142ec48a09e01430f7ee3b83214",
+          "message": "time: enforce `current_thread` rt for time::pause (#3289)\n\nPausing time is a capability added to assist with testing Tokio code\r\ndependent on time. Currently, the capability implicitly requires the\r\ncurrent_thread runtime.\r\n\r\nThis change enforces the requirement by panicking if called from a\r\nmulti-threaded runtime.",
+          "timestamp": "2020-12-17T15:37:08-08:00",
+          "tree_id": "6c565d6c74dff336ac847cb6463245283d8470d5",
+          "url": "https://github.com/timbrehifi/tokio/commit/abd4c0025539f142ec48a09e01430f7ee3b83214"
+        },
+        "date": 1608263063718,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 159739,
+            "range": "± 5243",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 620072,
+            "range": "± 41021",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4704254,
+            "range": "± 814895",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17756880,
+            "range": "± 2258006",
             "unit": "ns/iter"
           }
         ]
