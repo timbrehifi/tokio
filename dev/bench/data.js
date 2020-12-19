@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608395065233,
+  "lastUpdate": 1608395079279,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -10187,6 +10187,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 810279,
             "range": "± 91396",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "luciofranco14@gmail.com",
+            "name": "Lucio Franco",
+            "username": "LucioFranco"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b99b00eb302ae6ff19ca97d32b1e594143f43a60",
+          "message": "rt: change `max_threads` to `max_blocking_threads` (#3287)\n\nFixes #2802",
+          "timestamp": "2020-12-19T08:04:04-08:00",
+          "tree_id": "458d7fb55f921184a1056e766b6d0101fb763579",
+          "url": "https://github.com/timbrehifi/tokio/commit/b99b00eb302ae6ff19ca97d32b1e594143f43a60"
+        },
+        "date": 1608395078343,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 7173738,
+            "range": "± 2596456",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6750089,
+            "range": "± 1534867",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6465487,
+            "range": "± 2213166",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 577,
+            "range": "± 67",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 574,
+            "range": "± 41",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 571,
+            "range": "± 47",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 81044,
+            "range": "± 4839",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1413,
+            "range": "± 73",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1138859,
+            "range": "± 30249",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 824804,
+            "range": "± 38728",
             "unit": "ns/iter"
           }
         ]
