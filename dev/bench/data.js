@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608405448259,
+  "lastUpdate": 1608405452143,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -4495,6 +4495,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20741465,
             "range": "± 3159819",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flo.huebsch@pm.me",
+            "name": "Florian Hübsch",
+            "username": "fl9"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e41e6cddbba0cf13403924937ffe02aae6639e28",
+          "message": "docs: tokio::main macro is also supported on rt (#3243)\n\nFixes: #3144\r\nRefs: #2225",
+          "timestamp": "2020-12-19T19:12:08+01:00",
+          "tree_id": "ee1af0c8a3b2ab9c9eaae05f2dca96ff966f42f9",
+          "url": "https://github.com/timbrehifi/tokio/commit/e41e6cddbba0cf13403924937ffe02aae6639e28"
+        },
+        "date": 1608405450556,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 192788,
+            "range": "± 26651",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 717293,
+            "range": "± 37712",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5495273,
+            "range": "± 982061",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21188035,
+            "range": "± 2641521",
             "unit": "ns/iter"
           }
         ]
