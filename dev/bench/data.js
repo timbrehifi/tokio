@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608384635067,
+  "lastUpdate": 1608384659372,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -4291,6 +4291,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 17756880,
             "range": "± 2258006",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d948ccedfce534953a18acf46c8c6572103567c7",
+          "message": "chore: fix stress test (#3297)",
+          "timestamp": "2020-12-19T12:11:10+01:00",
+          "tree_id": "3c417da4134a45bfff1f2d85b9b8cf410dfd9bf9",
+          "url": "https://github.com/timbrehifi/tokio/commit/d948ccedfce534953a18acf46c8c6572103567c7"
+        },
+        "date": 1608384658453,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 177429,
+            "range": "± 14005",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 682142,
+            "range": "± 44872",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5188141,
+            "range": "± 498979",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20093285,
+            "range": "± 4431997",
             "unit": "ns/iter"
           }
         ]
