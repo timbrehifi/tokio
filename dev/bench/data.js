@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608395059156,
+  "lastUpdate": 1608395065233,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -4393,6 +4393,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20093285,
             "range": "± 4431997",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "luciofranco14@gmail.com",
+            "name": "Lucio Franco",
+            "username": "LucioFranco"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b99b00eb302ae6ff19ca97d32b1e594143f43a60",
+          "message": "rt: change `max_threads` to `max_blocking_threads` (#3287)\n\nFixes #2802",
+          "timestamp": "2020-12-19T08:04:04-08:00",
+          "tree_id": "458d7fb55f921184a1056e766b6d0101fb763579",
+          "url": "https://github.com/timbrehifi/tokio/commit/b99b00eb302ae6ff19ca97d32b1e594143f43a60"
+        },
+        "date": 1608395061118,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 203740,
+            "range": "± 68038",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 724054,
+            "range": "± 119002",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4990383,
+            "range": "± 1609285",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20741465,
+            "range": "± 3159819",
             "unit": "ns/iter"
           }
         ]
