@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608395079279,
+  "lastUpdate": 1608405448259,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -2375,6 +2375,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1047,
             "range": "± 153",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flo.huebsch@pm.me",
+            "name": "Florian Hübsch",
+            "username": "fl9"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e41e6cddbba0cf13403924937ffe02aae6639e28",
+          "message": "docs: tokio::main macro is also supported on rt (#3243)\n\nFixes: #3144\r\nRefs: #2225",
+          "timestamp": "2020-12-19T19:12:08+01:00",
+          "tree_id": "ee1af0c8a3b2ab9c9eaae05f2dca96ff966f42f9",
+          "url": "https://github.com/timbrehifi/tokio/commit/e41e6cddbba0cf13403924937ffe02aae6639e28"
+        },
+        "date": 1608405446882,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 14857,
+            "range": "± 5087",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 922,
+            "range": "± 302",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 527,
+            "range": "± 79",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 15536,
+            "range": "± 5452",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 880,
+            "range": "± 130",
             "unit": "ns/iter"
           }
         ]
