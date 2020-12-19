@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608405452143,
+  "lastUpdate": 1608405455640,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -6759,6 +6759,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 598,
             "range": "± 142",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flo.huebsch@pm.me",
+            "name": "Florian Hübsch",
+            "username": "fl9"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e41e6cddbba0cf13403924937ffe02aae6639e28",
+          "message": "docs: tokio::main macro is also supported on rt (#3243)\n\nFixes: #3144\r\nRefs: #2225",
+          "timestamp": "2020-12-19T19:12:08+01:00",
+          "tree_id": "ee1af0c8a3b2ab9c9eaae05f2dca96ff966f42f9",
+          "url": "https://github.com/timbrehifi/tokio/commit/e41e6cddbba0cf13403924937ffe02aae6639e28"
+        },
+        "date": 1608405454105,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 983,
+            "range": "± 94",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14541,
+            "range": "± 4766",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1009,
+            "range": "± 46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14552,
+            "range": "± 2836",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 577,
+            "range": "± 35",
             "unit": "ns/iter"
           }
         ]
