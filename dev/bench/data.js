@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608405461938,
+  "lastUpdate": 1608426239355,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -6813,6 +6813,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 577,
             "range": "± 35",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "28933599888a88e601acbb11fa824b0ee9f98c6e",
+          "message": "chore: update to `bytes` 1.0 git branch (#3301)\n\nUpdates the code base to track the `bytes` git branch. This is in\r\npreparation for the 1.0 release.\r\n\r\nCloses #3058",
+          "timestamp": "2020-12-19T15:57:16-08:00",
+          "tree_id": "2021ef3acf9407fcfa39032e0a493a81f1eb74cc",
+          "url": "https://github.com/timbrehifi/tokio/commit/28933599888a88e601acbb11fa824b0ee9f98c6e"
+        },
+        "date": 1608426237893,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1039,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 15894,
+            "range": "± 3988",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1087,
+            "range": "± 6",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 16422,
+            "range": "± 12564",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 591,
+            "range": "± 9",
             "unit": "ns/iter"
           }
         ]
