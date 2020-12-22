@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608636426239,
+  "lastUpdate": 1608636430714,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -4699,6 +4699,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19478280,
             "range": "± 3096057",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "te316e89@gmail.com",
+            "name": "Taiki Endo",
+            "username": "taiki-e"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "eee3ca65d6e5b4537915571f663f94184e616e6c",
+          "message": "deps: update rand to 0.8, loom to 0.4 (#3307)",
+          "timestamp": "2020-12-22T10:28:35+01:00",
+          "tree_id": "2f534ebe6cb319f30f72e7a9b2b389825500f051",
+          "url": "https://github.com/timbrehifi/tokio/commit/eee3ca65d6e5b4537915571f663f94184e616e6c"
+        },
+        "date": 1608636429200,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 184051,
+            "range": "± 19745",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 685922,
+            "range": "± 46923",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5241773,
+            "range": "± 309337",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20014944,
+            "range": "± 2997707",
             "unit": "ns/iter"
           }
         ]
