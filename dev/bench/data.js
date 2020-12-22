@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608677576342,
+  "lastUpdate": 1608677582219,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -4801,6 +4801,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20014944,
             "range": "± 2997707",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "be9fdb697dd62e00ad3a9e492778c1b5af7cbf0b",
+          "message": "time: make Interval::poll_tick() public (#3316)",
+          "timestamp": "2020-12-22T12:31:14-08:00",
+          "tree_id": "c06c2c6a1618d8dd177cd844f8f816f06e6033b8",
+          "url": "https://github.com/timbrehifi/tokio/commit/be9fdb697dd62e00ad3a9e492778c1b5af7cbf0b"
+        },
+        "date": 1608677577045,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 182694,
+            "range": "± 18857",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 705496,
+            "range": "± 43482",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5174989,
+            "range": "± 615554",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20173171,
+            "range": "± 2766687",
             "unit": "ns/iter"
           }
         ]
