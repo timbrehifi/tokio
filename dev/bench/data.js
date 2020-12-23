@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608687276770,
+  "lastUpdate": 1608687300719,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -4903,6 +4903,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20173171,
             "range": "± 2766687",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "luke.steensen@gmail.com",
+            "name": "Luke Steensen",
+            "username": "lukesteensen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a8dda19da4e94acd45f34b5eb359b4cffafa833f",
+          "message": "chore: update to released `bytes` 1.0 (#3317)",
+          "timestamp": "2020-12-22T17:09:26-08:00",
+          "tree_id": "c177db0f9bced11086bcb13be4ac2348e6c94469",
+          "url": "https://github.com/timbrehifi/tokio/commit/a8dda19da4e94acd45f34b5eb359b4cffafa833f"
+        },
+        "date": 1608687296617,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 199068,
+            "range": "± 29275",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 736309,
+            "range": "± 109271",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5905118,
+            "range": "± 1059667",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20926561,
+            "range": "± 3168513",
             "unit": "ns/iter"
           }
         ]
