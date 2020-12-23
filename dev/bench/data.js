@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608708108763,
+  "lastUpdate": 1608749715626,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -2699,6 +2699,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1028,
             "range": "± 143",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a66017f04985f5e7b7cb981e370e78a7291a5537",
+          "message": "chore: prepare Tokio 1.0 release (#3319)",
+          "timestamp": "2020-12-23T09:26:14-08:00",
+          "tree_id": "a874909774c2fcbed6073262e4b2b789fbcb1b60",
+          "url": "https://github.com/timbrehifi/tokio/commit/a66017f04985f5e7b7cb981e370e78a7291a5537"
+        },
+        "date": 1608749714666,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15770,
+            "range": "± 5337",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1099,
+            "range": "± 78",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 634,
+            "range": "± 44",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 15243,
+            "range": "± 3842",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1042,
+            "range": "± 101",
             "unit": "ns/iter"
           }
         ]
