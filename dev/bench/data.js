@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608708094075,
+  "lastUpdate": 1608708098000,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -4951,6 +4951,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20926561,
             "range": "± 3168513",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0deaeb84948f253b76b7fe64d7fe9d4527cd4275",
+          "message": "chore: remove unused `slab` dependency (#3318)",
+          "timestamp": "2020-12-22T21:56:22-08:00",
+          "tree_id": "3b9ad84403d71b2ad5d2c749c23516c3dfaec3ce",
+          "url": "https://github.com/timbrehifi/tokio/commit/0deaeb84948f253b76b7fe64d7fe9d4527cd4275"
+        },
+        "date": 1608708096021,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 199035,
+            "range": "± 118527",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 741321,
+            "range": "± 200416",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5786043,
+            "range": "± 1686606",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20820906,
+            "range": "± 2393672",
             "unit": "ns/iter"
           }
         ]
