@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608687314118,
+  "lastUpdate": 1608708094075,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -7437,6 +7437,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 496,
             "range": "± 17",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0deaeb84948f253b76b7fe64d7fe9d4527cd4275",
+          "message": "chore: remove unused `slab` dependency (#3318)",
+          "timestamp": "2020-12-22T21:56:22-08:00",
+          "tree_id": "3b9ad84403d71b2ad5d2c749c23516c3dfaec3ce",
+          "url": "https://github.com/timbrehifi/tokio/commit/0deaeb84948f253b76b7fe64d7fe9d4527cd4275"
+        },
+        "date": 1608708093141,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1052,
+            "range": "± 7",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 19914,
+            "range": "± 11478",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1083,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 20777,
+            "range": "± 11809",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 615,
+            "range": "± 6",
             "unit": "ns/iter"
           }
         ]
