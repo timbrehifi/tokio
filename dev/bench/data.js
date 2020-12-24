@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608749743389,
+  "lastUpdate": 1608822486984,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -5155,6 +5155,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18044006,
             "range": "± 2472639",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lnicola@users.noreply.github.com",
+            "name": "Laurențiu Nicola",
+            "username": "lnicola"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1eefbc250ad49d9086bdb2b8be4404bd445f63fb",
+          "message": "docs: remove stream feature from docs (#3335)",
+          "timestamp": "2020-12-24T23:17:18+09:00",
+          "tree_id": "f3657463c2d44548e4d71f8454ce672ffeb0b45f",
+          "url": "https://github.com/timbrehifi/tokio/commit/1eefbc250ad49d9086bdb2b8be4404bd445f63fb"
+        },
+        "date": 1608822482897,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 186888,
+            "range": "± 7062",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 722291,
+            "range": "± 34901",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5361390,
+            "range": "± 600972",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21195859,
+            "range": "± 2784934",
             "unit": "ns/iter"
           }
         ]
