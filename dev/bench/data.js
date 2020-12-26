@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609010372021,
+  "lastUpdate": 1609010375147,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -5413,6 +5413,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21882171,
             "range": "± 2735245",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4d7b73f5b3aaf6ce305f4cdc9fdb087242636f75",
+          "message": "chore: create stream_ext module (#3342)",
+          "timestamp": "2020-12-26T17:05:51+01:00",
+          "tree_id": "e3c07a0526d49a41be65cc756c2bb96667a56667",
+          "url": "https://github.com/timbrehifi/tokio/commit/4d7b73f5b3aaf6ce305f4cdc9fdb087242636f75"
+        },
+        "date": 1609010374122,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 156288,
+            "range": "± 3768",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 598030,
+            "range": "± 17974",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4596289,
+            "range": "± 498808",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18738653,
+            "range": "± 2123029",
             "unit": "ns/iter"
           }
         ]
