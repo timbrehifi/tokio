@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609104635750,
+  "lastUpdate": 1609104642523,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -5617,6 +5617,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21413179,
             "range": "± 2957673",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "arniu2006@163.com",
+            "name": "Arniu Tseng",
+            "username": "arniu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cbd4f4472e307186ac7bdf2a8f0ddb9b00a4a47c",
+          "message": "docs: update CHANGELOG.md (#3336)",
+          "timestamp": "2020-12-27T16:36:36+01:00",
+          "tree_id": "7757ceeb4ded53ab5045248937bf1cec28335619",
+          "url": "https://github.com/timbrehifi/tokio/commit/cbd4f4472e307186ac7bdf2a8f0ddb9b00a4a47c"
+        },
+        "date": 1609104641022,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 173773,
+            "range": "± 44764",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 663590,
+            "range": "± 80380",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4909976,
+            "range": "± 1166589",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18384707,
+            "range": "± 2299599",
             "unit": "ns/iter"
           }
         ]
