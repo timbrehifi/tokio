@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609072921367,
+  "lastUpdate": 1609072977711,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -5515,6 +5515,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18738653,
             "range": "± 2123029",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "te316e89@gmail.com",
+            "name": "Taiki Endo",
+            "username": "taiki-e"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "770044caa70465fbe5d2851a8d9a0bc0e5e7429a",
+          "message": "chore: replace deprecated compare_and_swap with compare_exchange (#3331)",
+          "timestamp": "2020-12-27T10:44:21+01:00",
+          "tree_id": "369bb6894ddb442e95e915a873daac756c79a81f",
+          "url": "https://github.com/timbrehifi/tokio/commit/770044caa70465fbe5d2851a8d9a0bc0e5e7429a"
+        },
+        "date": 1609072976192,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 199031,
+            "range": "± 50362",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 745953,
+            "range": "± 142380",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5377342,
+            "range": "± 836224",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21413179,
+            "range": "± 2957673",
             "unit": "ns/iter"
           }
         ]
