@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609538982451,
+  "lastUpdate": 1609539002146,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -5767,6 +5767,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21080864,
             "range": "± 2385780",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "udoprog@tedro.se",
+            "name": "John-John Tedro",
+            "username": "udoprog"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "53707f5d9dd271615c9191bf70cb2f68f1e500c8",
+          "message": "sync: remove underused internal Borrow wrapper (#3363)",
+          "timestamp": "2021-01-01T13:04:38-08:00",
+          "tree_id": "74f366ac1114878de46c1000c8209c3a45ac24c8",
+          "url": "https://github.com/timbrehifi/tokio/commit/53707f5d9dd271615c9191bf70cb2f68f1e500c8"
+        },
+        "date": 1609538998056,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 166050,
+            "range": "± 32037",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 622484,
+            "range": "± 70931",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5280198,
+            "range": "± 1290151",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18039160,
+            "range": "± 2877405",
             "unit": "ns/iter"
           }
         ]
