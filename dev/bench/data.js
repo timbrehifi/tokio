@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609506684845,
+  "lastUpdate": 1609538982451,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -8685,6 +8685,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 608,
             "range": "± 46",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "udoprog@tedro.se",
+            "name": "John-John Tedro",
+            "username": "udoprog"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "53707f5d9dd271615c9191bf70cb2f68f1e500c8",
+          "message": "sync: remove underused internal Borrow wrapper (#3363)",
+          "timestamp": "2021-01-01T13:04:38-08:00",
+          "tree_id": "74f366ac1114878de46c1000c8209c3a45ac24c8",
+          "url": "https://github.com/timbrehifi/tokio/commit/53707f5d9dd271615c9191bf70cb2f68f1e500c8"
+        },
+        "date": 1609538981615,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 855,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 13252,
+            "range": "± 2950",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 882,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13154,
+            "range": "± 2950",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 492,
+            "range": "± 17",
             "unit": "ns/iter"
           }
         ]
