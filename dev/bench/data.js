@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609798243617,
+  "lastUpdate": 1609851694466,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -6277,6 +6277,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20177755,
             "range": "± 2875123",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3549092a0cb760938c9cdab3013fa38c8d392db0",
+          "message": "docs: fix tokio-stream features not being displayed (#3378)",
+          "timestamp": "2021-01-05T11:43:09+01:00",
+          "tree_id": "de0c6ff59c7c647272bf5736b57fb904f22e036a",
+          "url": "https://github.com/timbrehifi/tokio/commit/3549092a0cb760938c9cdab3013fa38c8d392db0"
+        },
+        "date": 1609851693535,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 156588,
+            "range": "± 5228",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 613386,
+            "range": "± 30848",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4961081,
+            "range": "± 975226",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18419363,
+            "range": "± 2399288",
             "unit": "ns/iter"
           }
         ]
