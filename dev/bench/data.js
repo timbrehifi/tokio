@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609917003791,
+  "lastUpdate": 1609917013282,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -6433,6 +6433,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18419363,
             "range": "± 2399288",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "liaoymxsdl@sina.com",
+            "name": "Rust大闸蟹",
+            "username": "baoyachi"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e42317b072c5240fe190c0a8708cd24bb4a4eb08",
+          "message": "chore: remove macro_rules semicolon (#3381)\n\nfix build warning",
+          "timestamp": "2021-01-06T15:46:37+09:00",
+          "tree_id": "afddb1695c354a4f98712745b23363ef96774bc8",
+          "url": "https://github.com/timbrehifi/tokio/commit/e42317b072c5240fe190c0a8708cd24bb4a4eb08"
+        },
+        "date": 1609917012191,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 188824,
+            "range": "± 28685",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 718697,
+            "range": "± 150363",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5311813,
+            "range": "± 860039",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20068602,
+            "range": "± 3226366",
             "unit": "ns/iter"
           }
         ]
