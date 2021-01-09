@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610197787553,
+  "lastUpdate": 1610197802948,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -6637,6 +6637,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21098874,
             "range": "± 2223298",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "51a7082d135f52f5fe87ddd9ccc09d4d2a401dd4",
+          "message": "docs: test-util feature is not enabled with full (#3397)",
+          "timestamp": "2021-01-09T14:01:10+01:00",
+          "tree_id": "3ff2c0507f86f3ecc1f5387b95318634bcd5fd12",
+          "url": "https://github.com/timbrehifi/tokio/commit/51a7082d135f52f5fe87ddd9ccc09d4d2a401dd4"
+        },
+        "date": 1610197801315,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 186891,
+            "range": "± 26167",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 698403,
+            "range": "± 101085",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5101553,
+            "range": "± 769712",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21646503,
+            "range": "± 2815047",
             "unit": "ns/iter"
           }
         ]
