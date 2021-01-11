@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610382906477,
+  "lastUpdate": 1610382912080,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -6841,6 +6841,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21406512,
             "range": "± 2499035",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "te316e89@gmail.com",
+            "name": "Taiki Endo",
+            "username": "taiki-e"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "40d959263bc16771882b2d1c9356f1ec02957c3d",
+          "message": "macros: fix unused_braces in generated code (#3404)",
+          "timestamp": "2021-01-11T19:20:40+09:00",
+          "tree_id": "b7fc026d9435a2c7ce532071d3728ee9c5552c05",
+          "url": "https://github.com/timbrehifi/tokio/commit/40d959263bc16771882b2d1c9356f1ec02957c3d"
+        },
+        "date": 1610382910266,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 187620,
+            "range": "± 10855",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 727185,
+            "range": "± 31576",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5584007,
+            "range": "± 666249",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20855677,
+            "range": "± 3004579",
             "unit": "ns/iter"
           }
         ]
