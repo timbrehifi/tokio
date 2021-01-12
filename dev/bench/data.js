@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610435515482,
+  "lastUpdate": 1610467808756,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -6991,6 +6991,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19859698,
             "range": "± 2754795",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "te316e89@gmail.com",
+            "name": "Taiki Endo",
+            "username": "taiki-e"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d37486dd06e16fffa19aa4619dc5749f7579743f",
+          "message": "util: remove path deps (#3413)\n\n* util: remove path deps\r\n\r\n* ci: run clippy with --all-features\r\n\r\n* ci: run tests with --all-features on FreeBSD CI",
+          "timestamp": "2021-01-13T00:19:57+09:00",
+          "tree_id": "1954d61dc1b6b684033f02016068802ff6a4e6a4",
+          "url": "https://github.com/timbrehifi/tokio/commit/d37486dd06e16fffa19aa4619dc5749f7579743f"
+        },
+        "date": 1610467806941,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 155858,
+            "range": "± 5610",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 617641,
+            "range": "± 18135",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4635619,
+            "range": "± 941248",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18312782,
+            "range": "± 1959194",
             "unit": "ns/iter"
           }
         ]
