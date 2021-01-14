@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610586690468,
+  "lastUpdate": 1610586695181,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -7249,6 +7249,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21142086,
             "range": "± 2793690",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "luciofranco14@gmail.com",
+            "name": "Lucio Franco",
+            "username": "LucioFranco"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "672be92a03a489d028ed7ec2c6b1abdbf0874a1d",
+          "message": "mpsc: Add `Sender::try_reserve` function (#3418)\n\n* mpsc: Add `Sender::try_reserve` function\r\n\r\n* Update tokio/src/sync/mpsc/bounded.rs\r\n\r\nCo-authored-by: Alice Ryhl <alice@ryhl.io>\r\n\r\n* Fix doc links\r\n\r\nCo-authored-by: Alice Ryhl <alice@ryhl.io>",
+          "timestamp": "2021-01-13T14:24:23-05:00",
+          "tree_id": "dbefcc820c74146acd0f1164632acdc53a6a7448",
+          "url": "https://github.com/timbrehifi/tokio/commit/672be92a03a489d028ed7ec2c6b1abdbf0874a1d"
+        },
+        "date": 1610586689688,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 198617,
+            "range": "± 37015",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 737183,
+            "range": "± 156943",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5695418,
+            "range": "± 1459703",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21365008,
+            "range": "± 3233647",
             "unit": "ns/iter"
           }
         ]
