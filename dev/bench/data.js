@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610500225786,
+  "lastUpdate": 1610586684735,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -3833,6 +3833,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 911,
             "range": "± 11",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "luciofranco14@gmail.com",
+            "name": "Lucio Franco",
+            "username": "LucioFranco"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "672be92a03a489d028ed7ec2c6b1abdbf0874a1d",
+          "message": "mpsc: Add `Sender::try_reserve` function (#3418)\n\n* mpsc: Add `Sender::try_reserve` function\r\n\r\n* Update tokio/src/sync/mpsc/bounded.rs\r\n\r\nCo-authored-by: Alice Ryhl <alice@ryhl.io>\r\n\r\n* Fix doc links\r\n\r\nCo-authored-by: Alice Ryhl <alice@ryhl.io>",
+          "timestamp": "2021-01-13T14:24:23-05:00",
+          "tree_id": "dbefcc820c74146acd0f1164632acdc53a6a7448",
+          "url": "https://github.com/timbrehifi/tokio/commit/672be92a03a489d028ed7ec2c6b1abdbf0874a1d"
+        },
+        "date": 1610586683172,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15156,
+            "range": "± 8503",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 860,
+            "range": "± 273",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 501,
+            "range": "± 58",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 14969,
+            "range": "± 5330",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 868,
+            "range": "± 322",
             "unit": "ns/iter"
           }
         ]
