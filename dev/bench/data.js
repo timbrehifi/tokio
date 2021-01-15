@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610683807485,
+  "lastUpdate": 1610683813737,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -7453,6 +7453,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21844559,
             "range": "± 4429146",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "50183564+nylonicious@users.noreply.github.com",
+            "name": "Nylonicious",
+            "username": "nylonicious"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ecc32d1dca2317e555d8a6b29009cf19ef8f53e8",
+          "message": "sync: add RwLock  try_read and try_write methods (#3400)\n\nCloses #2284",
+          "timestamp": "2021-01-14T15:05:07-08:00",
+          "tree_id": "23a477f35ee5cfac28d79ebded78847ecebe5e82",
+          "url": "https://github.com/timbrehifi/tokio/commit/ecc32d1dca2317e555d8a6b29009cf19ef8f53e8"
+        },
+        "date": 1610683803014,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 190790,
+            "range": "± 58233",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 698761,
+            "range": "± 286985",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5170402,
+            "range": "± 1024650",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20216086,
+            "range": "± 2244296",
             "unit": "ns/iter"
           }
         ]
