@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610683791240,
+  "lastUpdate": 1610683801373,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -11235,6 +11235,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 604,
             "range": "± 52",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "50183564+nylonicious@users.noreply.github.com",
+            "name": "Nylonicious",
+            "username": "nylonicious"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ecc32d1dca2317e555d8a6b29009cf19ef8f53e8",
+          "message": "sync: add RwLock  try_read and try_write methods (#3400)\n\nCloses #2284",
+          "timestamp": "2021-01-14T15:05:07-08:00",
+          "tree_id": "23a477f35ee5cfac28d79ebded78847ecebe5e82",
+          "url": "https://github.com/timbrehifi/tokio/commit/ecc32d1dca2317e555d8a6b29009cf19ef8f53e8"
+        },
+        "date": 1610683798026,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 934,
+            "range": "± 249",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14832,
+            "range": "± 5949",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 919,
+            "range": "± 129",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14742,
+            "range": "± 3158",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 581,
+            "range": "± 58",
             "unit": "ns/iter"
           }
         ]
