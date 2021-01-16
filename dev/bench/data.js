@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610770206580,
+  "lastUpdate": 1610770211519,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -3995,6 +3995,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1094,
             "range": "± 56",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "distinct": true,
+          "id": "3dc5f6c0abd0548ee29081c18f1708d8256903f5",
+          "message": "chore: release tokio v1.0.2 (#3429)",
+          "timestamp": "2021-01-15T15:05:38-08:00",
+          "tree_id": "d6b86936a5bce5310c6c3fc1712accfdd3dc7f19",
+          "url": "https://github.com/timbrehifi/tokio/commit/3dc5f6c0abd0548ee29081c18f1708d8256903f5"
+        },
+        "date": 1610770208324,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 16722,
+            "range": "± 4750",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 957,
+            "range": "± 182",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 596,
+            "range": "± 114",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 16503,
+            "range": "± 3907",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1037,
+            "range": "± 236",
             "unit": "ns/iter"
           }
         ]
