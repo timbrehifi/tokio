@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610770192041,
+  "lastUpdate": 1610770206580,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -7501,6 +7501,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20216086,
             "range": "± 2244296",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "distinct": true,
+          "id": "3dc5f6c0abd0548ee29081c18f1708d8256903f5",
+          "message": "chore: release tokio v1.0.2 (#3429)",
+          "timestamp": "2021-01-15T15:05:38-08:00",
+          "tree_id": "d6b86936a5bce5310c6c3fc1712accfdd3dc7f19",
+          "url": "https://github.com/timbrehifi/tokio/commit/3dc5f6c0abd0548ee29081c18f1708d8256903f5"
+        },
+        "date": 1610770204865,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 176482,
+            "range": "± 27402",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 673531,
+            "range": "± 84465",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5744473,
+            "range": "± 1565131",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19163319,
+            "range": "± 2790998",
             "unit": "ns/iter"
           }
         ]
