@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610824191527,
+  "lastUpdate": 1610824197030,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -7657,6 +7657,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19163319,
             "range": "± 2790998",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jacob.otoole1@gmail.com",
+            "name": "Jacob O'Toole",
+            "username": "JOT85"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7ac44a2d28f5967851ae6ad0d6d8d4666a26cf6f",
+          "message": "process: add documentation to process::Child fields (#3437)",
+          "timestamp": "2021-01-16T19:42:51+01:00",
+          "tree_id": "8cf40349f634dc93da463ee6527e14d011967dcd",
+          "url": "https://github.com/timbrehifi/tokio/commit/7ac44a2d28f5967851ae6ad0d6d8d4666a26cf6f"
+        },
+        "date": 1610824194616,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 201889,
+            "range": "± 20719",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 747509,
+            "range": "± 77708",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5306044,
+            "range": "± 627907",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21564831,
+            "range": "± 2103166",
             "unit": "ns/iter"
           }
         ]
