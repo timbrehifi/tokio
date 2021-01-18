@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610932183157,
+  "lastUpdate": 1610932189133,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -7861,6 +7861,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21360643,
             "range": "± 2469041",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "heng@cantab.net",
+            "name": "Henry Gomersall",
+            "username": "hgomersall"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5402c948eebbb4c6c695e156d68ce495a43ea81a",
+          "message": "io: clarify AsyncFd docs about changes of the inner fd (#3430)",
+          "timestamp": "2021-01-17T21:39:58+01:00",
+          "tree_id": "63ed16dcd34c11314b7bda2dcb983946b5669a1e",
+          "url": "https://github.com/timbrehifi/tokio/commit/5402c948eebbb4c6c695e156d68ce495a43ea81a"
+        },
+        "date": 1610932188017,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 182023,
+            "range": "± 64042",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 658918,
+            "range": "± 93503",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4532495,
+            "range": "± 548012",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18998227,
+            "range": "± 3058472",
             "unit": "ns/iter"
           }
         ]
