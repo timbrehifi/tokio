@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611182501152,
+  "lastUpdate": 1611182508401,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -8065,6 +8065,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18983683,
             "range": "± 2288223",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cc0911aa645cbaf5dee5b3d51efcfbe703159902",
+          "message": "net: update datagram docs on splitting (#3448)",
+          "timestamp": "2021-01-20T16:28:57+01:00",
+          "tree_id": "6a9606182d62c927932ebdd5361899a12573b9b5",
+          "url": "https://github.com/timbrehifi/tokio/commit/cc0911aa645cbaf5dee5b3d51efcfbe703159902"
+        },
+        "date": 1611182498177,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 187954,
+            "range": "± 24284",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 701865,
+            "range": "± 63946",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5700881,
+            "range": "± 631226",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20487635,
+            "range": "± 2655743",
             "unit": "ns/iter"
           }
         ]
