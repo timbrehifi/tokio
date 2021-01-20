@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611154412974,
+  "lastUpdate": 1611154420585,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -7963,6 +7963,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18998227,
             "range": "± 3058472",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "arve.knudsen@gmail.com",
+            "name": "Arve Knudsen",
+            "username": "aknuds1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fdde5583f853655fec57c44928b7d5f01621b754",
+          "message": "runtime: consolidate errors for context missing (#3441)",
+          "timestamp": "2021-01-20T14:29:13+01:00",
+          "tree_id": "4d207d4f5babb280741aaaec32be0209460fc7f7",
+          "url": "https://github.com/timbrehifi/tokio/commit/fdde5583f853655fec57c44928b7d5f01621b754"
+        },
+        "date": 1611154415429,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 184099,
+            "range": "± 35434",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 688357,
+            "range": "± 89276",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4618485,
+            "range": "± 806537",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18983683,
+            "range": "± 2288223",
             "unit": "ns/iter"
           }
         ]
