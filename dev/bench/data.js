@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611193386980,
+  "lastUpdate": 1611193390997,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -4319,6 +4319,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1067,
             "range": "± 59",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "oguzbilgener@gmail.com",
+            "name": "Oğuz Bilgener",
+            "username": "oguzbilgener"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7d5b12c50947929326bdfaadb78155ee6593f209",
+          "message": "sync: fix panic in broadcast::Receiver drop (#3434)",
+          "timestamp": "2021-01-20T23:12:51+01:00",
+          "tree_id": "eb5c97f6b799d586eff7bbb09133c1b325e43357",
+          "url": "https://github.com/timbrehifi/tokio/commit/7d5b12c50947929326bdfaadb78155ee6593f209"
+        },
+        "date": 1611193388813,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 14828,
+            "range": "± 5146",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1065,
+            "range": "± 456",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 617,
+            "range": "± 150",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 14770,
+            "range": "± 4107",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1065,
+            "range": "± 248",
             "unit": "ns/iter"
           }
         ]
