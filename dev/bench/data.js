@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611256796997,
+  "lastUpdate": 1611353258226,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -12585,6 +12585,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 495,
             "range": "± 10",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6da5087b06f1ca2f1f374e52908a97d2c37c8cd3",
+          "message": "sync: improve bounded mpsc documentation (#3458)",
+          "timestamp": "2021-01-22T19:28:37+01:00",
+          "tree_id": "ae80651dacb513f67ab37e6270e954a0d108a641",
+          "url": "https://github.com/timbrehifi/tokio/commit/6da5087b06f1ca2f1f374e52908a97d2c37c8cd3"
+        },
+        "date": 1611353256505,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 966,
+            "range": "± 149",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 15656,
+            "range": "± 6439",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1004,
+            "range": "± 78",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14866,
+            "range": "± 4582",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 589,
+            "range": "± 50",
             "unit": "ns/iter"
           }
         ]
