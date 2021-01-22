@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611353262791,
+  "lastUpdate": 1611353266688,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -8371,6 +8371,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21803087,
             "range": "± 3288333",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6da5087b06f1ca2f1f374e52908a97d2c37c8cd3",
+          "message": "sync: improve bounded mpsc documentation (#3458)",
+          "timestamp": "2021-01-22T19:28:37+01:00",
+          "tree_id": "ae80651dacb513f67ab37e6270e954a0d108a641",
+          "url": "https://github.com/timbrehifi/tokio/commit/6da5087b06f1ca2f1f374e52908a97d2c37c8cd3"
+        },
+        "date": 1611353259420,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 195736,
+            "range": "± 4926",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 744040,
+            "range": "± 54044",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 6062433,
+            "range": "± 1062602",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21388872,
+            "range": "± 2091876",
             "unit": "ns/iter"
           }
         ]
