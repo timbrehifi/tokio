@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611353281706,
+  "lastUpdate": 1611364333095,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -12741,6 +12741,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 589,
             "range": "± 50",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "35b1a4d0b3a411f52ffc97010b9b002e53bd0d84",
+          "message": "chore: prepare Tokio 1.1.0 (#3462)",
+          "timestamp": "2021-01-22T23:05:37+01:00",
+          "tree_id": "54efedad7616780dc46f50b4a6248de978daa8dc",
+          "url": "https://github.com/timbrehifi/tokio/commit/35b1a4d0b3a411f52ffc97010b9b002e53bd0d84"
+        },
+        "date": 1611364331926,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 834,
+            "range": "± 80",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 13503,
+            "range": "± 3176",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 895,
+            "range": "± 7",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13685,
+            "range": "± 1968",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 494,
+            "range": "± 23",
             "unit": "ns/iter"
           }
         ]
