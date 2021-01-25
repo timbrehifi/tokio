@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611592599934,
+  "lastUpdate": 1611592607685,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -8575,6 +8575,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18502154,
             "range": "± 3601195",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Ontonator@users.noreply.github.com",
+            "name": "Ontonator",
+            "username": "Ontonator"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f13a9dd87a9026cf009c740ccfc341d479286e2f",
+          "message": "tokio: update dates in CHANGELOG.md to 2021 (#3469)",
+          "timestamp": "2021-01-25T12:04:58+01:00",
+          "tree_id": "8889d95fa7c4320cbb0dd2d2e805b9c09dd19796",
+          "url": "https://github.com/timbrehifi/tokio/commit/f13a9dd87a9026cf009c740ccfc341d479286e2f"
+        },
+        "date": 1611592603367,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 195755,
+            "range": "± 31282",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 723821,
+            "range": "± 65982",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5222606,
+            "range": "± 586593",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 22066651,
+            "range": "± 3060895",
             "unit": "ns/iter"
           }
         ]
