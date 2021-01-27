@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611748671044,
+  "lastUpdate": 1611748684876,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -8623,6 +8623,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 22066651,
             "range": "± 3060895",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ivanppetkov@gmail.com",
+            "name": "Ivan Petkov",
+            "username": "ipetkov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "34f1d3d0409864b71a7b7ecd9f4964fee7f923d4",
+          "message": "process: allow for ergonomically piping stdio of one child into another (#3466)\n\n* Add `TryInto<Stdio>` impls for `ChildStd{in,out,err}` for ergonomic\r\n  conversions into `std::process::Stdio` so callers can perform the\r\n  conversion without needing to manipulate raw fds/handles directly",
+          "timestamp": "2021-01-27T01:12:54Z",
+          "tree_id": "d2e533614399fb27574edfe0febe103973b4e9dd",
+          "url": "https://github.com/timbrehifi/tokio/commit/34f1d3d0409864b71a7b7ecd9f4964fee7f923d4"
+        },
+        "date": 1611748683141,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 190013,
+            "range": "± 17219",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 716636,
+            "range": "± 46051",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5573239,
+            "range": "± 1325505",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20654953,
+            "range": "± 2614600",
             "unit": "ns/iter"
           }
         ]
