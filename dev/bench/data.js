@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611748690565,
+  "lastUpdate": 1611748719505,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -20267,6 +20267,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 822375,
             "range": "± 16813",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ivanppetkov@gmail.com",
+            "name": "Ivan Petkov",
+            "username": "ipetkov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "34f1d3d0409864b71a7b7ecd9f4964fee7f923d4",
+          "message": "process: allow for ergonomically piping stdio of one child into another (#3466)\n\n* Add `TryInto<Stdio>` impls for `ChildStd{in,out,err}` for ergonomic\r\n  conversions into `std::process::Stdio` so callers can perform the\r\n  conversion without needing to manipulate raw fds/handles directly",
+          "timestamp": "2021-01-27T01:12:54Z",
+          "tree_id": "d2e533614399fb27574edfe0febe103973b4e9dd",
+          "url": "https://github.com/timbrehifi/tokio/commit/34f1d3d0409864b71a7b7ecd9f4964fee7f923d4"
+        },
+        "date": 1611748717907,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6713465,
+            "range": "± 2429314",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6502757,
+            "range": "± 1949291",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6390462,
+            "range": "± 2877000",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 777,
+            "range": "± 108",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 778,
+            "range": "± 126",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 806,
+            "range": "± 191",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 140615,
+            "range": "± 35779",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1633,
+            "range": "± 315",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1042901,
+            "range": "± 191283",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 731140,
+            "range": "± 216235",
             "unit": "ns/iter"
           }
         ]
