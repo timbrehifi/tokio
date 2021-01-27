@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611748684876,
+  "lastUpdate": 1611748690565,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -4589,6 +4589,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1004,
             "range": "± 168",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ivanppetkov@gmail.com",
+            "name": "Ivan Petkov",
+            "username": "ipetkov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "34f1d3d0409864b71a7b7ecd9f4964fee7f923d4",
+          "message": "process: allow for ergonomically piping stdio of one child into another (#3466)\n\n* Add `TryInto<Stdio>` impls for `ChildStd{in,out,err}` for ergonomic\r\n  conversions into `std::process::Stdio` so callers can perform the\r\n  conversion without needing to manipulate raw fds/handles directly",
+          "timestamp": "2021-01-27T01:12:54Z",
+          "tree_id": "d2e533614399fb27574edfe0febe103973b4e9dd",
+          "url": "https://github.com/timbrehifi/tokio/commit/34f1d3d0409864b71a7b7ecd9f4964fee7f923d4"
+        },
+        "date": 1611748688896,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 16249,
+            "range": "± 6660",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1096,
+            "range": "± 36800",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 580,
+            "range": "± 159",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 16252,
+            "range": "± 6068",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1061,
+            "range": "± 185",
             "unit": "ns/iter"
           }
         ]
