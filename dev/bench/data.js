@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611867086081,
+  "lastUpdate": 1611867145728,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -20747,6 +20747,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 700644,
             "range": "± 10379",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jamiehodkinson@gmail.com",
+            "name": "Jamie",
+            "username": "Hodkinson"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "225e8ea05f2dbc056250d2572fb9363123ee35ef",
+          "message": "sync: update RwLock doc to mention possibility of deadlock (#3389)",
+          "timestamp": "2021-01-28T16:38:49+01:00",
+          "tree_id": "22665910861f2eaf439e197f6e19554d205a9c02",
+          "url": "https://github.com/timbrehifi/tokio/commit/225e8ea05f2dbc056250d2572fb9363123ee35ef"
+        },
+        "date": 1611867144571,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 7710148,
+            "range": "± 2492805",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 7301865,
+            "range": "± 1750626",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6640978,
+            "range": "± 3095778",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 872,
+            "range": "± 60",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 881,
+            "range": "± 99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 887,
+            "range": "± 128",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 138970,
+            "range": "± 7711",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1702,
+            "range": "± 687",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1113682,
+            "range": "± 122412",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 772324,
+            "range": "± 116575",
             "unit": "ns/iter"
           }
         ]
