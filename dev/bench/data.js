@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611844675468,
+  "lastUpdate": 1611867065702,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -13365,6 +13365,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 557,
             "range": "± 62",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jamiehodkinson@gmail.com",
+            "name": "Jamie",
+            "username": "Hodkinson"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "225e8ea05f2dbc056250d2572fb9363123ee35ef",
+          "message": "sync: update RwLock doc to mention possibility of deadlock (#3389)",
+          "timestamp": "2021-01-28T16:38:49+01:00",
+          "tree_id": "22665910861f2eaf439e197f6e19554d205a9c02",
+          "url": "https://github.com/timbrehifi/tokio/commit/225e8ea05f2dbc056250d2572fb9363123ee35ef"
+        },
+        "date": 1611867064642,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 731,
+            "range": "± 192",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14513,
+            "range": "± 5748",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 719,
+            "range": "± 176",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13389,
+            "range": "± 5232",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 451,
+            "range": "± 60",
             "unit": "ns/iter"
           }
         ]
