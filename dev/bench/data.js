@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611867065702,
+  "lastUpdate": 1611867079310,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -8827,6 +8827,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21815440,
             "range": "± 2440515",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jamiehodkinson@gmail.com",
+            "name": "Jamie",
+            "username": "Hodkinson"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "225e8ea05f2dbc056250d2572fb9363123ee35ef",
+          "message": "sync: update RwLock doc to mention possibility of deadlock (#3389)",
+          "timestamp": "2021-01-28T16:38:49+01:00",
+          "tree_id": "22665910861f2eaf439e197f6e19554d205a9c02",
+          "url": "https://github.com/timbrehifi/tokio/commit/225e8ea05f2dbc056250d2572fb9363123ee35ef"
+        },
+        "date": 1611867078135,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 189096,
+            "range": "± 18604",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 713246,
+            "range": "± 53844",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5254080,
+            "range": "± 409594",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20828074,
+            "range": "± 2526993",
             "unit": "ns/iter"
           }
         ]
