@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611844670004,
+  "lastUpdate": 1611844675468,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -13311,6 +13311,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 491,
             "range": "± 868",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cd7526873c9fbc224bed593dab6665ce92d0ec9d",
+          "message": "net: improve discoverability of TcpSocket (#3471)",
+          "timestamp": "2021-01-28T14:09:14+01:00",
+          "tree_id": "544e4b8d2623682b8ee8efc1defbe40c5d1c5b54",
+          "url": "https://github.com/timbrehifi/tokio/commit/cd7526873c9fbc224bed593dab6665ce92d0ec9d"
+        },
+        "date": 1611844674275,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1000,
+            "range": "± 126",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 16348,
+            "range": "± 8675",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 974,
+            "range": "± 92",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 16714,
+            "range": "± 8024",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 557,
+            "range": "± 62",
             "unit": "ns/iter"
           }
         ]
