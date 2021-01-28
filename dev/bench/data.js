@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611844665508,
+  "lastUpdate": 1611844670004,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -8779,6 +8779,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20654953,
             "range": "± 2614600",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cd7526873c9fbc224bed593dab6665ce92d0ec9d",
+          "message": "net: improve discoverability of TcpSocket (#3471)",
+          "timestamp": "2021-01-28T14:09:14+01:00",
+          "tree_id": "544e4b8d2623682b8ee8efc1defbe40c5d1c5b54",
+          "url": "https://github.com/timbrehifi/tokio/commit/cd7526873c9fbc224bed593dab6665ce92d0ec9d"
+        },
+        "date": 1611844667253,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 195514,
+            "range": "± 20449",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 745131,
+            "range": "± 79609",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5574945,
+            "range": "± 853778",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21815440,
+            "range": "± 2440515",
             "unit": "ns/iter"
           }
         ]
