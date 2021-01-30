@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612006636683,
+  "lastUpdate": 1612006642359,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -9133,6 +9133,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 22027352,
             "range": "± 3148472",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "robjtede@icloud.com",
+            "name": "Rob Ede",
+            "username": "robjtede"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06d6adf4b7597fa316f3277c2aa60da27dac59fc",
+          "message": "util: use ReusableBoxFuture for PollSemaphore (#3463)",
+          "timestamp": "2021-01-30T10:57:04+01:00",
+          "tree_id": "70444423e9bde1b15802535904a31d4e7af31a51",
+          "url": "https://github.com/timbrehifi/tokio/commit/06d6adf4b7597fa316f3277c2aa60da27dac59fc"
+        },
+        "date": 1612006640080,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 185642,
+            "range": "± 19918",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 665689,
+            "range": "± 49610",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5167733,
+            "range": "± 1162484",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19392160,
+            "range": "± 2932867",
             "unit": "ns/iter"
           }
         ]
