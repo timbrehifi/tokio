@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611974232511,
+  "lastUpdate": 1611974238519,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -9031,6 +9031,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 17941486,
             "range": "± 2132196",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "891aba5f7159372256102c3ba8d075e1834dc220",
+          "message": "util: add ReusableBoxFuture utility (#3464)",
+          "timestamp": "2021-01-30T00:03:01+01:00",
+          "tree_id": "98f1f0fd655fe7384a8c4d590a08a3d567400820",
+          "url": "https://github.com/timbrehifi/tokio/commit/891aba5f7159372256102c3ba8d075e1834dc220"
+        },
+        "date": 1611974236760,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 188711,
+            "range": "± 15110",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 715037,
+            "range": "± 60006",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5758311,
+            "range": "± 943573",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 22027352,
+            "range": "± 3148472",
             "unit": "ns/iter"
           }
         ]
