@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611974277321,
+  "lastUpdate": 1612006636683,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -13833,6 +13833,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 560,
             "range": "± 143",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "robjtede@icloud.com",
+            "name": "Rob Ede",
+            "username": "robjtede"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06d6adf4b7597fa316f3277c2aa60da27dac59fc",
+          "message": "util: use ReusableBoxFuture for PollSemaphore (#3463)",
+          "timestamp": "2021-01-30T10:57:04+01:00",
+          "tree_id": "70444423e9bde1b15802535904a31d4e7af31a51",
+          "url": "https://github.com/timbrehifi/tokio/commit/06d6adf4b7597fa316f3277c2aa60da27dac59fc"
+        },
+        "date": 1612006632389,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 953,
+            "range": "± 195",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14689,
+            "range": "± 3813",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 977,
+            "range": "± 78",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 15311,
+            "range": "± 3827",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 568,
+            "range": "± 218",
             "unit": "ns/iter"
           }
         ]
