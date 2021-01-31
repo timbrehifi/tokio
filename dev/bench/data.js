@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612093036487,
+  "lastUpdate": 1612093041701,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -9235,6 +9235,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19392160,
             "range": "± 2932867",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ee1f0c473f5e9b70a96756bc67fe5a04e691294d",
+          "message": "util: remove tokio-stream dependency from tokio-util (#3487)",
+          "timestamp": "2021-01-31T11:08:40+01:00",
+          "tree_id": "0bac93a1eb0a9a77b8deb2801d6a36402345b024",
+          "url": "https://github.com/timbrehifi/tokio/commit/ee1f0c473f5e9b70a96756bc67fe5a04e691294d"
+        },
+        "date": 1612093040553,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 190949,
+            "range": "± 6203",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 730081,
+            "range": "± 34692",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5549149,
+            "range": "± 652588",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21921180,
+            "range": "± 2917568",
             "unit": "ns/iter"
           }
         ]
