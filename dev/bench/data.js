@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612456206855,
+  "lastUpdate": 1612456216213,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -9541,6 +9541,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20262127,
             "range": "± 2537547",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chenshuo17@huawei.com",
+            "name": "surechen",
+            "username": "surechen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3e5a0a7df6eff94a1d6fee60fad5813f6bb42e64",
+          "message": "runtime: fix a spelling mistake (#3503)",
+          "timestamp": "2021-02-04T12:30:31+01:00",
+          "tree_id": "586a72831f167ab4244ba8647512380256e8cb0c",
+          "url": "https://github.com/timbrehifi/tokio/commit/3e5a0a7df6eff94a1d6fee60fad5813f6bb42e64"
+        },
+        "date": 1612456214591,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 178675,
+            "range": "± 47870",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 674762,
+            "range": "± 131075",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4524409,
+            "range": "± 528357",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19573358,
+            "range": "± 2350638",
             "unit": "ns/iter"
           }
         ]
