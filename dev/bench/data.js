@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612564453703,
+  "lastUpdate": 1612574727856,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -9745,6 +9745,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18866451,
             "range": "± 1876897",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "572a897d43d5e4942f26b7a67bed862d642679e4",
+          "message": "chore: prepare tokio v1.2.0 (#3506)",
+          "timestamp": "2021-02-05T23:27:42+01:00",
+          "tree_id": "8cfde1add47ad7728472fdce05ca5ecf94cba357",
+          "url": "https://github.com/timbrehifi/tokio/commit/572a897d43d5e4942f26b7a67bed862d642679e4"
+        },
+        "date": 1612574723626,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 159525,
+            "range": "± 10199",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 625821,
+            "range": "± 21543",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4812007,
+            "range": "± 437438",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18832998,
+            "range": "± 2588317",
             "unit": "ns/iter"
           }
         ]
