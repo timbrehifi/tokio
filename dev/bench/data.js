@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612703870344,
+  "lastUpdate": 1612703875668,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -10105,6 +10105,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19458407,
             "range": "± 2463427",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e82782940259f7bd88dc029b6c539b98f1e370f7",
+          "message": "signal: add Signal wrappers to tokio-stream (#3510)",
+          "timestamp": "2021-02-07T11:30:18+01:00",
+          "tree_id": "4aaf8e7813fbda22fff622a42984a77280f67265",
+          "url": "https://github.com/timbrehifi/tokio/commit/e82782940259f7bd88dc029b6c539b98f1e370f7"
+        },
+        "date": 1612703874482,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 194672,
+            "range": "± 51746",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 700305,
+            "range": "± 135389",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5338651,
+            "range": "± 1587901",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20239926,
+            "range": "± 3590472",
             "unit": "ns/iter"
           }
         ]
