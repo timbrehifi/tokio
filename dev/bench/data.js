@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613038696838,
+  "lastUpdate": 1613038725472,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -10153,6 +10153,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20239926,
             "range": "± 3590472",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "469b43de6aee2fe69d7961260685ae147ddb7ec0",
+          "message": "time: fix typo in Sleep doc (#3515)",
+          "timestamp": "2021-02-11T10:30:48+01:00",
+          "tree_id": "01c127af62255cb0a2592728925f2332abb44ed4",
+          "url": "https://github.com/timbrehifi/tokio/commit/469b43de6aee2fe69d7961260685ae147ddb7ec0"
+        },
+        "date": 1613038724161,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 204954,
+            "range": "± 58595",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 741581,
+            "range": "± 113832",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5711033,
+            "range": "± 1087274",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21179367,
+            "range": "± 2331725",
             "unit": "ns/iter"
           }
         ]
