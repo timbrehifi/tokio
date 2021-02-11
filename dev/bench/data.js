@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612703894689,
+  "lastUpdate": 1613038692873,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -15393,6 +15393,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 585,
             "range": "± 64",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "469b43de6aee2fe69d7961260685ae147ddb7ec0",
+          "message": "time: fix typo in Sleep doc (#3515)",
+          "timestamp": "2021-02-11T10:30:48+01:00",
+          "tree_id": "01c127af62255cb0a2592728925f2332abb44ed4",
+          "url": "https://github.com/timbrehifi/tokio/commit/469b43de6aee2fe69d7961260685ae147ddb7ec0"
+        },
+        "date": 1613038691622,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 957,
+            "range": "± 164",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 17233,
+            "range": "± 7094",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 974,
+            "range": "± 111",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 17408,
+            "range": "± 6612",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 576,
+            "range": "± 102",
             "unit": "ns/iter"
           }
         ]
