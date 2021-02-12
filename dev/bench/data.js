@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613038730269,
+  "lastUpdate": 1613135890877,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -5453,6 +5453,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1109,
             "range": "± 158",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4099bfdef05f514d4ca25cf15a58b12e2c53fdc1",
+          "message": "sync: do not recommend join_all for Barrier (#3514)",
+          "timestamp": "2021-02-12T10:43:11+01:00",
+          "tree_id": "a093bb5ac06db40745b68f7b77ee696598f4d568",
+          "url": "https://github.com/timbrehifi/tokio/commit/4099bfdef05f514d4ca25cf15a58b12e2c53fdc1"
+        },
+        "date": 1613135889125,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 16177,
+            "range": "± 6499",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1096,
+            "range": "± 7",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 655,
+            "range": "± 353",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 15998,
+            "range": "± 5549",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1097,
+            "range": "± 9",
             "unit": "ns/iter"
           }
         ]
