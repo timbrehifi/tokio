@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613135916273,
+  "lastUpdate": 1613211474439,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -10357,6 +10357,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20468522,
             "range": "± 3291328",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7c6a1c463773d435a4a36486ac5c21850a0eaf0c",
+          "message": "net: update UdpSocket splitting doc (#3517)",
+          "timestamp": "2021-02-13T11:13:42+01:00",
+          "tree_id": "60690a4aa68780ba5f410a84149966d89bd1c649",
+          "url": "https://github.com/timbrehifi/tokio/commit/7c6a1c463773d435a4a36486ac5c21850a0eaf0c"
+        },
+        "date": 1613211473317,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 160825,
+            "range": "± 4305",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 606405,
+            "range": "± 25917",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4666719,
+            "range": "± 298625",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18034486,
+            "range": "± 3104350",
             "unit": "ns/iter"
           }
         ]
