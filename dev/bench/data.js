@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613233081899,
+  "lastUpdate": 1613233087682,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -10513,6 +10513,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18034486,
             "range": "± 3104350",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e3f2dcf5bc8315f01c8843259e78c8e98203a978",
+          "message": "sync: add back RwLockWriteGuard::map and RwLockWriteGuard::try_map (#3348)",
+          "timestamp": "2021-02-13T12:53:21+01:00",
+          "tree_id": "2f26885382b4fb759edcddce833866c8c2421bb2",
+          "url": "https://github.com/timbrehifi/tokio/commit/e3f2dcf5bc8315f01c8843259e78c8e98203a978"
+        },
+        "date": 1613233078734,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 189863,
+            "range": "± 13619",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 698110,
+            "range": "± 58658",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5526574,
+            "range": "± 643423",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20494971,
+            "range": "± 2538142",
             "unit": "ns/iter"
           }
         ]
