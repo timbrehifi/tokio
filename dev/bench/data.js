@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613430901126,
+  "lastUpdate": 1613430908639,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -10615,6 +10615,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20494971,
             "range": "± 2538142",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "appletree2479@outlook.com",
+            "name": "Pen Tree",
+            "username": "zyctree"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "36bcfa6b9d5b722bab5bdb68814988ded917802b",
+          "message": "doc: rename notify to notify_one (#3526)",
+          "timestamp": "2021-02-15T20:21:27+01:00",
+          "tree_id": "dde3e1515580469dbe3495064a36dd5c97fe9835",
+          "url": "https://github.com/timbrehifi/tokio/commit/36bcfa6b9d5b722bab5bdb68814988ded917802b"
+        },
+        "date": 1613430906666,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 181880,
+            "range": "± 35868",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 675541,
+            "range": "± 88309",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4520715,
+            "range": "± 875149",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19431994,
+            "range": "± 2846166",
             "unit": "ns/iter"
           }
         ]
