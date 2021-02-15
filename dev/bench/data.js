@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613233109037,
+  "lastUpdate": 1613430901126,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -5615,6 +5615,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 812,
             "range": "± 124",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "appletree2479@outlook.com",
+            "name": "Pen Tree",
+            "username": "zyctree"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "36bcfa6b9d5b722bab5bdb68814988ded917802b",
+          "message": "doc: rename notify to notify_one (#3526)",
+          "timestamp": "2021-02-15T20:21:27+01:00",
+          "tree_id": "dde3e1515580469dbe3495064a36dd5c97fe9835",
+          "url": "https://github.com/timbrehifi/tokio/commit/36bcfa6b9d5b722bab5bdb68814988ded917802b"
+        },
+        "date": 1613430899822,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15138,
+            "range": "± 4838",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1096,
+            "range": "± 20",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 655,
+            "range": "± 27",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 14874,
+            "range": "± 5018",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1090,
+            "range": "± 50",
             "unit": "ns/iter"
           }
         ]
