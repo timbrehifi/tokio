@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613582178577,
+  "lastUpdate": 1613582187170,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -10663,6 +10663,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19431994,
             "range": "± 2846166",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kornel@geekhood.net",
+            "name": "Kornel",
+            "username": "kornelski"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6fd06aaeecce21bcf31cbe485fe0060e3f07e983",
+          "message": "doc: doc aliases for pre-1.0 function names (#3523)",
+          "timestamp": "2021-02-17T13:00:44+01:00",
+          "tree_id": "88c46387d4d21612d95c32eed4204451be361825",
+          "url": "https://github.com/timbrehifi/tokio/commit/6fd06aaeecce21bcf31cbe485fe0060e3f07e983"
+        },
+        "date": 1613582186011,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 162871,
+            "range": "± 4856",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 616898,
+            "range": "± 31798",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4714887,
+            "range": "± 410305",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17713572,
+            "range": "± 2003768",
             "unit": "ns/iter"
           }
         ]
