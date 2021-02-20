@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613829733052,
+  "lastUpdate": 1613829737710,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -16539,6 +16539,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 532,
             "range": "± 74",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "adam@adamharvey.name",
+            "name": "Adam Harvey",
+            "username": "LawnGnome"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "53558cb48964d7e0f2c97687504711ab47bf1890",
+          "message": "doc: note the EOF behaviour of read_until (#3536)",
+          "timestamp": "2021-02-20T10:22:51+01:00",
+          "tree_id": "84800a72f434ef6b5854b4227defe9d077506a79",
+          "url": "https://github.com/timbrehifi/tokio/commit/53558cb48964d7e0f2c97687504711ab47bf1890"
+        },
+        "date": 1613829728013,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 833,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 13036,
+            "range": "± 2561",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 867,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13175,
+            "range": "± 3379",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 490,
+            "range": "± 9",
             "unit": "ns/iter"
           }
         ]
