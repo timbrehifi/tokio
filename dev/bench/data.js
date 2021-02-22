@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613829778799,
+  "lastUpdate": 1614003577757,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -5831,6 +5831,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1147,
             "range": "± 7",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mmikulicic@gmail.com",
+            "name": "Marko Mikulicic",
+            "username": "mkmik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7de18af82cfd8b1aebcacfe86d2650f400aaeea8",
+          "message": "doc: sync interval.rs and time/mod.rs docs (#3533)",
+          "timestamp": "2021-02-22T11:45:49+01:00",
+          "tree_id": "5dac4fa4947b69ba1c1b3a8f8a09418d6b245024",
+          "url": "https://github.com/timbrehifi/tokio/commit/7de18af82cfd8b1aebcacfe86d2650f400aaeea8"
+        },
+        "date": 1614003576522,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 13416,
+            "range": "± 2202",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 915,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 542,
+            "range": "± 6",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 13872,
+            "range": "± 3091",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 937,
+            "range": "± 9",
             "unit": "ns/iter"
           }
         ]
