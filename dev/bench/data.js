@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614124645628,
+  "lastUpdate": 1614293886101,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -5939,6 +5939,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1091,
             "range": "± 33",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "stepan.koltsov@gmail.com",
+            "name": "Stepan Koltsov",
+            "username": "stepancheg"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "112e160b623e3bef1603bf522abbdaacbc6c94e5",
+          "message": "sync: allow oneshot::Receiver::close after successful try_recv (#3552)\n\nBefore this commit `close` after successful `try_recv` panics.\r\n\r\nMy use case is this: on drop, I call `close` to prevent pushing a\r\nmessage to the queue, and then fetch the message if any and process\r\nit.\r\n\r\nBut if message is already processed, `close` panics.  And there is\r\nno API to know if message was already fetched or not (except for\r\nwriting a wrapped which would track that info, which would be an\r\noverkill).\r\n\r\nBut generally `close` operation should be safe to be called any\r\ntime.",
+          "timestamp": "2021-02-25T20:28:24+01:00",
+          "tree_id": "7d391a1ad3c4d46a53b9e7aa4629ed3423af56a5",
+          "url": "https://github.com/timbrehifi/tokio/commit/112e160b623e3bef1603bf522abbdaacbc6c94e5"
+        },
+        "date": 1614293884870,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15272,
+            "range": "± 6049",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 996,
+            "range": "± 236",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 572,
+            "range": "± 99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 16073,
+            "range": "± 7596",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1046,
+            "range": "± 156",
             "unit": "ns/iter"
           }
         ]
