@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614293896899,
+  "lastUpdate": 1614293901469,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -26267,6 +26267,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 780170,
             "range": "± 160324",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "stepan.koltsov@gmail.com",
+            "name": "Stepan Koltsov",
+            "username": "stepancheg"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "112e160b623e3bef1603bf522abbdaacbc6c94e5",
+          "message": "sync: allow oneshot::Receiver::close after successful try_recv (#3552)\n\nBefore this commit `close` after successful `try_recv` panics.\r\n\r\nMy use case is this: on drop, I call `close` to prevent pushing a\r\nmessage to the queue, and then fetch the message if any and process\r\nit.\r\n\r\nBut if message is already processed, `close` panics.  And there is\r\nno API to know if message was already fetched or not (except for\r\nwriting a wrapped which would track that info, which would be an\r\noverkill).\r\n\r\nBut generally `close` operation should be safe to be called any\r\ntime.",
+          "timestamp": "2021-02-25T20:28:24+01:00",
+          "tree_id": "7d391a1ad3c4d46a53b9e7aa4629ed3423af56a5",
+          "url": "https://github.com/timbrehifi/tokio/commit/112e160b623e3bef1603bf522abbdaacbc6c94e5"
+        },
+        "date": 1614293900214,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6281197,
+            "range": "± 2558453",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6251744,
+            "range": "± 1489530",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5868889,
+            "range": "± 2451085",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 816,
+            "range": "± 44",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 810,
+            "range": "± 36",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 809,
+            "range": "± 47",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 120331,
+            "range": "± 6961",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1647,
+            "range": "± 104",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1088615,
+            "range": "± 112701",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 778407,
+            "range": "± 52858",
             "unit": "ns/iter"
           }
         ]
