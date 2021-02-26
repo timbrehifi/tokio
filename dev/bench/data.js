@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614347429769,
+  "lastUpdate": 1614347450512,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -26747,6 +26747,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 773815,
             "range": "± 105702",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "stepan.koltsov@gmail.com",
+            "name": "Stepan Koltsov",
+            "username": "stepancheg"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d2ad7afd21e4faef05ccccb0288bc814a954b990",
+          "message": "time: do not panic on timeout(Duration::MAX) (#3551)\n\nIt is tempting to use very large `Duration` value to get a practically\r\ninfinite timeout.\r\n\r\nBefore this commit Tokio panics on checked Instant + Duration\r\noverflow.\r\n\r\nThis commit implements very simple fix: if Instant + Duration\r\noverflows, we use duration = 30 years. Better fix should avoid\r\nfiring a timer on duration overflow. It requires deeper understanding\r\nhow timers work, but also it is not clear, for example, what\r\n`Sleep::deadline` function should return.\r\n\r\nSimilar fix is done for `sleep`.",
+          "timestamp": "2021-02-26T10:04:08+01:00",
+          "tree_id": "98d543466cff5c05d0d1fbfb819d7ee2234d6559",
+          "url": "https://github.com/timbrehifi/tokio/commit/d2ad7afd21e4faef05ccccb0288bc814a954b990"
+        },
+        "date": 1614347449288,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6181518,
+            "range": "± 2787358",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6118148,
+            "range": "± 1988542",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5666977,
+            "range": "± 3027380",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 754,
+            "range": "± 106",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 821,
+            "range": "± 182",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 745,
+            "range": "± 159",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 134306,
+            "range": "± 22376",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1630,
+            "range": "± 314",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 963494,
+            "range": "± 96377",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 687730,
+            "range": "± 117962",
             "unit": "ns/iter"
           }
         ]
