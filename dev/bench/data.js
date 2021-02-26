@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614308717544,
+  "lastUpdate": 1614308720925,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -17211,6 +17211,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 589,
             "range": "± 160",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ronzigelman@gmail.com",
+            "name": "r-zig",
+            "username": "r-zig"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5756a005a646108bfdc386f48385803303c372a8",
+          "message": "codec: LinesCodec should only return MaxLineLengthExceeded once per line (#3556)",
+          "timestamp": "2021-02-25T23:21:59+01:00",
+          "tree_id": "337baca3a133b06d310ada79d8e5696d2f7b777b",
+          "url": "https://github.com/timbrehifi/tokio/commit/5756a005a646108bfdc386f48385803303c372a8"
+        },
+        "date": 1614308716756,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 915,
+            "range": "± 121",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14664,
+            "range": "± 5766",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 920,
+            "range": "± 188",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14624,
+            "range": "± 5611",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 553,
+            "range": "± 34",
             "unit": "ns/iter"
           }
         ]
