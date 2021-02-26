@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614308702373,
+  "lastUpdate": 1614308717544,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -11329,6 +11329,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20664427,
             "range": "± 3186567",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ronzigelman@gmail.com",
+            "name": "r-zig",
+            "username": "r-zig"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5756a005a646108bfdc386f48385803303c372a8",
+          "message": "codec: LinesCodec should only return MaxLineLengthExceeded once per line (#3556)",
+          "timestamp": "2021-02-25T23:21:59+01:00",
+          "tree_id": "337baca3a133b06d310ada79d8e5696d2f7b777b",
+          "url": "https://github.com/timbrehifi/tokio/commit/5756a005a646108bfdc386f48385803303c372a8"
+        },
+        "date": 1614308716218,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 181110,
+            "range": "± 59758",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 663603,
+            "range": "± 159378",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4877962,
+            "range": "± 1125766",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17908826,
+            "range": "± 3950795",
             "unit": "ns/iter"
           }
         ]
