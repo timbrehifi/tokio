@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614308729524,
+  "lastUpdate": 1614347415717,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -6047,6 +6047,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 816,
             "range": "± 82",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "stepan.koltsov@gmail.com",
+            "name": "Stepan Koltsov",
+            "username": "stepancheg"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d2ad7afd21e4faef05ccccb0288bc814a954b990",
+          "message": "time: do not panic on timeout(Duration::MAX) (#3551)\n\nIt is tempting to use very large `Duration` value to get a practically\r\ninfinite timeout.\r\n\r\nBefore this commit Tokio panics on checked Instant + Duration\r\noverflow.\r\n\r\nThis commit implements very simple fix: if Instant + Duration\r\noverflows, we use duration = 30 years. Better fix should avoid\r\nfiring a timer on duration overflow. It requires deeper understanding\r\nhow timers work, but also it is not clear, for example, what\r\n`Sleep::deadline` function should return.\r\n\r\nSimilar fix is done for `sleep`.",
+          "timestamp": "2021-02-26T10:04:08+01:00",
+          "tree_id": "98d543466cff5c05d0d1fbfb819d7ee2234d6559",
+          "url": "https://github.com/timbrehifi/tokio/commit/d2ad7afd21e4faef05ccccb0288bc814a954b990"
+        },
+        "date": 1614347414247,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 16436,
+            "range": "± 6778",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1103,
+            "range": "± 201",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 657,
+            "range": "± 87",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 16118,
+            "range": "± 5613",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1098,
+            "range": "± 12",
             "unit": "ns/iter"
           }
         ]
