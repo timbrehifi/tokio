@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614347450512,
+  "lastUpdate": 1614477357510,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -11479,6 +11479,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20387084,
             "range": "± 3573443",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pka@sourcepole.ch",
+            "name": "Pirmin Kalberer",
+            "username": "pka"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fd93ecf5e0452ab7954478ba579da8e0acec636d",
+          "message": "stream: remove duplicate doc_cfg declaration (#3561)",
+          "timestamp": "2021-02-27T22:47:26+01:00",
+          "tree_id": "5747469ee1fc513ce324f8fd573fb38373d14121",
+          "url": "https://github.com/timbrehifi/tokio/commit/fd93ecf5e0452ab7954478ba579da8e0acec636d"
+        },
+        "date": 1614477355815,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 145651,
+            "range": "± 27430",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 574770,
+            "range": "± 70966",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4535994,
+            "range": "± 1483746",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17052008,
+            "range": "± 2875168",
             "unit": "ns/iter"
           }
         ]
