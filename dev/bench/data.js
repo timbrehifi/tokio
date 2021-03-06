@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615045707069,
+  "lastUpdate": 1615045714397,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -11941,6 +11941,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20141668,
             "range": "± 2778284",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "constantin.nickel@gmail.com",
+            "name": "nickelc",
+            "username": "nickelc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "704de8c01b331c2651c0cdb0d5ec6b0657e14344",
+          "message": "stream: remove duplicate `doc(test(..))` & `cfg_attr` declarations (#3571)",
+          "timestamp": "2021-03-06T20:54:28+09:00",
+          "tree_id": "05cfb9504112210a7d4e372c30c16177aee4ee59",
+          "url": "https://github.com/timbrehifi/tokio/commit/704de8c01b331c2651c0cdb0d5ec6b0657e14344"
+        },
+        "date": 1615045713149,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 200336,
+            "range": "± 30752",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 721324,
+            "range": "± 115592",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5481534,
+            "range": "± 795853",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20574406,
+            "range": "± 3078735",
             "unit": "ns/iter"
           }
         ]
