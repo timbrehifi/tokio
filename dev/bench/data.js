@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615343029796,
+  "lastUpdate": 1615387653489,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -12091,6 +12091,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21819825,
             "range": "± 3425605",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bcb95db4e2d4a9a43a3f3f5e129ddb7232599451",
+          "message": "chore: fix clippy warnings in newer versions (#3588)",
+          "timestamp": "2021-03-10T08:42:24+01:00",
+          "tree_id": "7b6d7086dfedf0ff5a67567a02120ed87965bb20",
+          "url": "https://github.com/timbrehifi/tokio/commit/bcb95db4e2d4a9a43a3f3f5e129ddb7232599451"
+        },
+        "date": 1615387652106,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 204921,
+            "range": "± 47596",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 741272,
+            "range": "± 166252",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5268775,
+            "range": "± 1123672",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20517947,
+            "range": "± 2458187",
             "unit": "ns/iter"
           }
         ]
