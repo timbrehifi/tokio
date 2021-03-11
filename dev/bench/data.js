@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615500707218,
+  "lastUpdate": 1615500728550,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -18981,6 +18981,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 563,
             "range": "± 118",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "zaharidichev@gmail.com",
+            "name": "Zahari Dichev",
+            "username": "zaharidichev"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "edfff7551abc24e6d6ee5e0dc8e894cf1309a53d",
+          "message": "util: anotate time module as requiring time feature (#3606)\n\nSigned-off-by: Zahari Dichev <zaharidichev@gmail.com>",
+          "timestamp": "2021-03-11T16:02:01+01:00",
+          "tree_id": "a2a71b1a527cc8cdb62c8b82081da5c9e003bfc3",
+          "url": "https://github.com/timbrehifi/tokio/commit/edfff7551abc24e6d6ee5e0dc8e894cf1309a53d"
+        },
+        "date": 1615500727184,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 982,
+            "range": "± 1034",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 13980,
+            "range": "± 4904",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1024,
+            "range": "± 219",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 15028,
+            "range": "± 3513",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 564,
+            "range": "± 161",
             "unit": "ns/iter"
           }
         ]
