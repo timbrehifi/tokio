@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615440406402,
+  "lastUpdate": 1615440420248,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -12349,6 +12349,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20631938,
             "range": "± 3276846",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "robjtede@icloud.com",
+            "name": "Rob Ede",
+            "username": "robjtede"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1cda0f16a2f8814e0a973162543d6d1f786c8a44",
+          "message": "doc: alias sleep to delay (#3604)",
+          "timestamp": "2021-03-10T23:26:11+01:00",
+          "tree_id": "d9126b3b1dee76315b0e3fdbab2772e068d06875",
+          "url": "https://github.com/timbrehifi/tokio/commit/1cda0f16a2f8814e0a973162543d6d1f786c8a44"
+        },
+        "date": 1615440419021,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 166340,
+            "range": "± 30164",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 649352,
+            "range": "± 91557",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5006006,
+            "range": "± 1076975",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18461273,
+            "range": "± 3097782",
             "unit": "ns/iter"
           }
         ]
