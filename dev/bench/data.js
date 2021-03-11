@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615500728550,
+  "lastUpdate": 1615500734921,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -12499,6 +12499,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18657081,
             "range": "± 3951079",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "zaharidichev@gmail.com",
+            "name": "Zahari Dichev",
+            "username": "zaharidichev"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "edfff7551abc24e6d6ee5e0dc8e894cf1309a53d",
+          "message": "util: anotate time module as requiring time feature (#3606)\n\nSigned-off-by: Zahari Dichev <zaharidichev@gmail.com>",
+          "timestamp": "2021-03-11T16:02:01+01:00",
+          "tree_id": "a2a71b1a527cc8cdb62c8b82081da5c9e003bfc3",
+          "url": "https://github.com/timbrehifi/tokio/commit/edfff7551abc24e6d6ee5e0dc8e894cf1309a53d"
+        },
+        "date": 1615500733574,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 166248,
+            "range": "± 5739",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 620176,
+            "range": "± 29612",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4728653,
+            "range": "± 1094869",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18313792,
+            "range": "± 2107390",
             "unit": "ns/iter"
           }
         ]
