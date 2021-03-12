@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615500752824,
+  "lastUpdate": 1615591984460,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -12601,6 +12601,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18313792,
             "range": "± 2107390",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37372069+setpill@users.noreply.github.com",
+            "name": "setpill",
+            "username": "setpill"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "345b29ca11755c4dcf6c371ddfd9ce3071e60273",
+          "message": "sync: improve Mutex FIFO explanation (#3615)",
+          "timestamp": "2021-03-12T21:24:05+01:00",
+          "tree_id": "31a28eeac318ba82b45fb5aebcba6b8df79955e1",
+          "url": "https://github.com/timbrehifi/tokio/commit/345b29ca11755c4dcf6c371ddfd9ce3071e60273"
+        },
+        "date": 1615591982971,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 134515,
+            "range": "± 7219",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 270627,
+            "range": "± 7631",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 1905126,
+            "range": "± 182745",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 9920910,
+            "range": "± 1484776",
             "unit": "ns/iter"
           }
         ]
