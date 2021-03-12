@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615591991458,
+  "lastUpdate": 1615591996085,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -29573,6 +29573,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 819447,
             "range": "± 96256",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37372069+setpill@users.noreply.github.com",
+            "name": "setpill",
+            "username": "setpill"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "345b29ca11755c4dcf6c371ddfd9ce3071e60273",
+          "message": "sync: improve Mutex FIFO explanation (#3615)",
+          "timestamp": "2021-03-12T21:24:05+01:00",
+          "tree_id": "31a28eeac318ba82b45fb5aebcba6b8df79955e1",
+          "url": "https://github.com/timbrehifi/tokio/commit/345b29ca11755c4dcf6c371ddfd9ce3071e60273"
+        },
+        "date": 1615591994625,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 2233967,
+            "range": "± 1044579",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 1553174,
+            "range": "± 356583",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 1748288,
+            "range": "± 419130",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 428,
+            "range": "± 11",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 424,
+            "range": "± 10",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 424,
+            "range": "± 10",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 49234,
+            "range": "± 1548",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1032,
+            "range": "± 74",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 593657,
+            "range": "± 9813",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 379831,
+            "range": "± 3430",
             "unit": "ns/iter"
           }
         ]
