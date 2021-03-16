@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615922670623,
+  "lastUpdate": 1615935664905,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -12799,6 +12799,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19062376,
             "range": "± 3110585",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ivanppetkov@gmail.com",
+            "name": "Ivan Petkov",
+            "username": "ipetkov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e4f76688a00fa2ce81ab6c074700995095c29e1e",
+          "message": "runtime: fix memory leak/growth when creating many runtimes (#3564)",
+          "timestamp": "2021-03-16T19:31:46+01:00",
+          "tree_id": "a2ea19402b796f1f9c30a7c32611c83240a6fbfb",
+          "url": "https://github.com/timbrehifi/tokio/commit/e4f76688a00fa2ce81ab6c074700995095c29e1e"
+        },
+        "date": 1615935663430,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 203498,
+            "range": "± 80049",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 768913,
+            "range": "± 157776",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5584456,
+            "range": "± 959300",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20144477,
+            "range": "± 4313932",
             "unit": "ns/iter"
           }
         ]
