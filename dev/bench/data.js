@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615922655358,
+  "lastUpdate": 1615922664457,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -29807,6 +29807,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 379831,
             "range": "± 3430",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "zaharidichev@gmail.com",
+            "name": "Zahari Dichev",
+            "username": "zaharidichev"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e6103d66614567e069ca0d0d5e93706434511163",
+          "message": "docs: add link to PollSender (#3613)\n\nThere was no link to [`PollSender`] in [`mpsc::Sender`] docs which made it\r\nless discoverable.\r\n\r\n[`PollSender`]: https://docs.rs/tokio-util/0.6.4/tokio_util/sync/struct.PollSender.html\r\n[`mpsc::Sender::send`]: https://docs.rs/tokio/1.3.0/tokio/sync/mpsc/struct.Sender.html",
+          "timestamp": "2021-03-16T17:55:06+01:00",
+          "tree_id": "1034745ee6ece60802659acb47ac6bf6eabe42a0",
+          "url": "https://github.com/timbrehifi/tokio/commit/e6103d66614567e069ca0d0d5e93706434511163"
+        },
+        "date": 1615922663062,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6762242,
+            "range": "± 3436487",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6642318,
+            "range": "± 2526915",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5735174,
+            "range": "± 2894845",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 559,
+            "range": "± 78",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 552,
+            "range": "± 11",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 553,
+            "range": "± 20",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 72418,
+            "range": "± 2948",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1430,
+            "range": "± 224",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 961550,
+            "range": "± 17000",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 703247,
+            "range": "± 11339",
             "unit": "ns/iter"
           }
         ]
