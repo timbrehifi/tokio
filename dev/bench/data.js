@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615935667119,
+  "lastUpdate": 1615935690611,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -6749,6 +6749,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 772,
             "range": "± 13",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ivanppetkov@gmail.com",
+            "name": "Ivan Petkov",
+            "username": "ipetkov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e4f76688a00fa2ce81ab6c074700995095c29e1e",
+          "message": "runtime: fix memory leak/growth when creating many runtimes (#3564)",
+          "timestamp": "2021-03-16T19:31:46+01:00",
+          "tree_id": "a2ea19402b796f1f9c30a7c32611c83240a6fbfb",
+          "url": "https://github.com/timbrehifi/tokio/commit/e4f76688a00fa2ce81ab6c074700995095c29e1e"
+        },
+        "date": 1615935689134,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 14849,
+            "range": "± 5487",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1104,
+            "range": "± 49",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 665,
+            "range": "± 116",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 17191,
+            "range": "± 8228",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1160,
+            "range": "± 243",
             "unit": "ns/iter"
           }
         ]
