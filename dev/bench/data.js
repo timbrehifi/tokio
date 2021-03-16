@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615591999524,
+  "lastUpdate": 1615898365122,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -12703,6 +12703,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 9920910,
             "range": "± 1484776",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "zaharidichev@gmail.com",
+            "name": "Zahari Dichev",
+            "username": "zaharidichev"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e6a9167bb7012f23640f5022bd97740d7829c4b1",
+          "message": "runtime: avoid unnecessary polling of block_on future (#3582)",
+          "timestamp": "2021-03-16T10:30:18+01:00",
+          "tree_id": "02f2d79b68e3be88d573da55b949691d732423c0",
+          "url": "https://github.com/timbrehifi/tokio/commit/e6a9167bb7012f23640f5022bd97740d7829c4b1"
+        },
+        "date": 1615898361883,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 183299,
+            "range": "± 36595",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 688477,
+            "range": "± 157747",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4952044,
+            "range": "± 1164036",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19355062,
+            "range": "± 3225199",
             "unit": "ns/iter"
           }
         ]
