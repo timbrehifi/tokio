@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616257185448,
+  "lastUpdate": 1616257875967,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -13003,6 +13003,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20787363,
             "range": "± 3955357",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "david.pdrsn@gmail.com",
+            "name": "David Pedersen",
+            "username": "davidpdrsn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "0bfcbc8be5368bf2a203c2c2856e5d3e7f5154b3",
+          "message": "runtime: fix unclear docs for `{Handle,Runtime}::block_on` (#3628)",
+          "timestamp": "2021-03-20T14:52:25+01:00",
+          "tree_id": "b5bc658aff9693ae146773d8c1ca1c775b404f45",
+          "url": "https://github.com/timbrehifi/tokio/commit/0bfcbc8be5368bf2a203c2c2856e5d3e7f5154b3"
+        },
+        "date": 1616257872673,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 157985,
+            "range": "± 1971",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 627415,
+            "range": "± 41994",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4937031,
+            "range": "± 1129373",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18613742,
+            "range": "± 2866634",
             "unit": "ns/iter"
           }
         ]
