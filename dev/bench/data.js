@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616328563937,
+  "lastUpdate": 1616328566857,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -13159,6 +13159,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18613742,
             "range": "± 2866634",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kai.jewson@gmail.com",
+            "name": "Kai Jewson",
+            "username": "KaiJewson"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "69b129b405518e60e51a26b6a95428878331a4c8",
+          "message": "stream: avoid yielding in AllFuture and AnyFuture (#3625)",
+          "timestamp": "2021-03-21T09:34:18+01:00",
+          "tree_id": "ad89644817967de0c611e1da7d0309bf26e38d74",
+          "url": "https://github.com/timbrehifi/tokio/commit/69b129b405518e60e51a26b6a95428878331a4c8"
+        },
+        "date": 1616328563193,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 188107,
+            "range": "± 14518",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 727612,
+            "range": "± 61452",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5233731,
+            "range": "± 1104961",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21250254,
+            "range": "± 5036572",
             "unit": "ns/iter"
           }
         ]
