@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616371996258,
+  "lastUpdate": 1616371999377,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -13261,6 +13261,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21250254,
             "range": "± 5036572",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ibrah1440@gmail.com",
+            "name": "Ibraheem Ahmed",
+            "username": "ibraheemdev"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "63395f061ed8389ea05610c5d7fbc7be166c77f4",
+          "message": "macros: fix typo in select macro docs (#3629)",
+          "timestamp": "2021-03-21T20:10:28+01:00",
+          "tree_id": "1f7cdc512c3277588374d83ccea7d7e99827aa80",
+          "url": "https://github.com/timbrehifi/tokio/commit/63395f061ed8389ea05610c5d7fbc7be166c77f4"
+        },
+        "date": 1616371997929,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 194531,
+            "range": "± 20741",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 732125,
+            "range": "± 56628",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5770389,
+            "range": "± 1259462",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 22825702,
+            "range": "± 3983380",
             "unit": "ns/iter"
           }
         ]
