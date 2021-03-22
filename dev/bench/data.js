@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616448283297,
+  "lastUpdate": 1616448286541,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -13465,6 +13465,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20515368,
             "range": "± 4096350",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "moritz.gunz@gmail.com",
+            "name": "Moritz Gunz",
+            "username": "NeoLegends"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "227b3e0d9c5276a5ce6a69405436418cd5515f39",
+          "message": "chore: avoid allocation if PollSemaphore is unused (#3634)",
+          "timestamp": "2021-03-22T17:02:30+01:00",
+          "tree_id": "3d19e1a59af025c38b91b4869439fc7d6db50d81",
+          "url": "https://github.com/timbrehifi/tokio/commit/227b3e0d9c5276a5ce6a69405436418cd5515f39"
+        },
+        "date": 1616448284881,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 186269,
+            "range": "± 34446",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 685405,
+            "range": "± 127962",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4502572,
+            "range": "± 938478",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18466804,
+            "range": "± 2340585",
             "unit": "ns/iter"
           }
         ]
