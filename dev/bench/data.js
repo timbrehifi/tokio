@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616415770046,
+  "lastUpdate": 1616415785383,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -13309,6 +13309,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 22825702,
             "range": "± 3983380",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "74891396+somethingelseentirely@users.noreply.github.com",
+            "name": "somethingelseentirely",
+            "username": "somethingelseentirely"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8ed825fd495046ea3c4e83cd33cee2ded0210b84",
+          "message": "util: makes Framed and FramedStream resumable after eof (#3272)",
+          "timestamp": "2021-03-22T09:09:01+01:00",
+          "tree_id": "f54e8f9f36b85351c82ca21b81a19c06201907e3",
+          "url": "https://github.com/timbrehifi/tokio/commit/8ed825fd495046ea3c4e83cd33cee2ded0210b84"
+        },
+        "date": 1616415783870,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 186454,
+            "range": "± 29324",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 692432,
+            "range": "± 100275",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5261204,
+            "range": "± 1293421",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20515368,
+            "range": "± 4096350",
             "unit": "ns/iter"
           }
         ]
