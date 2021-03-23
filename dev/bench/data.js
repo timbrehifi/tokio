@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616448298308,
+  "lastUpdate": 1616516383358,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -13513,6 +13513,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18466804,
             "range": "± 2340585",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kai.jewson@gmail.com",
+            "name": "Kai Jewson",
+            "username": "KaiJewson"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0dc4769708279a076e01a66dc53ec226083c1bdb",
+          "message": "sync: add OwnedRwLockReadGuard and OwnedRwLockWriteGuard (#3340)",
+          "timestamp": "2021-03-23T13:40:17+01:00",
+          "tree_id": "f2176a8959a190799a3da96112d37904a10ad86e",
+          "url": "https://github.com/timbrehifi/tokio/commit/0dc4769708279a076e01a66dc53ec226083c1bdb"
+        },
+        "date": 1616516381487,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 167285,
+            "range": "± 20579",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 614245,
+            "range": "± 82785",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4479201,
+            "range": "± 1110588",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 16858858,
+            "range": "± 2271129",
             "unit": "ns/iter"
           }
         ]
