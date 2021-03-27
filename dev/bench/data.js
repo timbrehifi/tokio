@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616858987146,
+  "lastUpdate": 1616858991089,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -13975,6 +13975,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21709289,
             "range": "± 3804296",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "46445660+CorinJG@users.noreply.github.com",
+            "name": "CorinJG",
+            "username": "CorinJG"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1a80d6eee542847c9e8399f1c6a0d495fb3817a0",
+          "message": "sync: improve doc on blocking mutex (#3645)",
+          "timestamp": "2021-03-27T13:26:10+01:00",
+          "tree_id": "a0d10efb9b60d62a44902a624c6f3b851d1c8ddf",
+          "url": "https://github.com/timbrehifi/tokio/commit/1a80d6eee542847c9e8399f1c6a0d495fb3817a0"
+        },
+        "date": 1616858988962,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 199317,
+            "range": "± 39026",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 744283,
+            "range": "± 147028",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5920669,
+            "range": "± 1299225",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 22437688,
+            "range": "± 4068801",
             "unit": "ns/iter"
           }
         ]
