@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617116077925,
+  "lastUpdate": 1617116080226,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -7559,6 +7559,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1077,
             "range": "± 89",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "simon.lindholm10@gmail.com",
+            "name": "Simon Lindholm",
+            "username": "simonlindholm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f7c181c2c49ee28d7cb0773f5cdb4bec35b5a89b",
+          "message": "sync: fix notifications getting dropped on receiver drop (#3652)",
+          "timestamp": "2021-03-30T09:18:07+02:00",
+          "tree_id": "6fdeec8b6452c39c795bc4950008c506f6f8de01",
+          "url": "https://github.com/timbrehifi/tokio/commit/f7c181c2c49ee28d7cb0773f5cdb4bec35b5a89b"
+        },
+        "date": 1617116076387,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15958,
+            "range": "± 5232",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1006,
+            "range": "± 206",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 587,
+            "range": "± 142",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 15880,
+            "range": "± 5556",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1033,
+            "range": "± 204",
             "unit": "ns/iter"
           }
         ]
