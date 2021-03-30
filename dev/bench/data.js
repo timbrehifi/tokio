@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617087603485,
+  "lastUpdate": 1617088327790,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -14227,6 +14227,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21003845,
             "range": "± 4054305",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "qm3ster@gmail.com",
+            "name": "Mihail Malo",
+            "username": "qm3ster"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "6f896d88464e8fc85ad66d002ee79ebd2d22d5a9",
+          "message": "macros: add missing => in doc (#3638)",
+          "timestamp": "2021-03-22T21:37:29+01:00",
+          "tree_id": "8cd9a7838b5f43fa7f528ad10527319b0852e675",
+          "url": "https://github.com/timbrehifi/tokio/commit/6f896d88464e8fc85ad66d002ee79ebd2d22d5a9"
+        },
+        "date": 1617088326133,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 198343,
+            "range": "± 25422",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 722712,
+            "range": "± 130909",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5353962,
+            "range": "± 936230",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 22759724,
+            "range": "± 4140859",
             "unit": "ns/iter"
           }
         ]
