@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617116080226,
+  "lastUpdate": 1617116082908,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -14383,6 +14383,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 22759724,
             "range": "± 4140859",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "simon.lindholm10@gmail.com",
+            "name": "Simon Lindholm",
+            "username": "simonlindholm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f7c181c2c49ee28d7cb0773f5cdb4bec35b5a89b",
+          "message": "sync: fix notifications getting dropped on receiver drop (#3652)",
+          "timestamp": "2021-03-30T09:18:07+02:00",
+          "tree_id": "6fdeec8b6452c39c795bc4950008c506f6f8de01",
+          "url": "https://github.com/timbrehifi/tokio/commit/f7c181c2c49ee28d7cb0773f5cdb4bec35b5a89b"
+        },
+        "date": 1617116075911,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 200434,
+            "range": "± 49788",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 753873,
+            "range": "± 138260",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5548630,
+            "range": "± 1169818",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20369555,
+            "range": "± 3762938",
             "unit": "ns/iter"
           }
         ]
