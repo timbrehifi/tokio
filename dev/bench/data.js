@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617116100967,
+  "lastUpdate": 1617156280737,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -14431,6 +14431,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20369555,
             "range": "± 3762938",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "50183564+nylonicious@users.noreply.github.com",
+            "name": "Nylonicious",
+            "username": "nylonicious"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8fc49dc522841101c25dbe7ffe222b64a896b5ab",
+          "message": "chore: update years in all licenses (#3665)",
+          "timestamp": "2021-03-30T21:45:13+02:00",
+          "tree_id": "b7b89103db86839919011cd9ec3f9f4fcbc7b481",
+          "url": "https://github.com/timbrehifi/tokio/commit/8fc49dc522841101c25dbe7ffe222b64a896b5ab"
+        },
+        "date": 1617156279330,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 163421,
+            "range": "± 4652",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 629068,
+            "range": "± 46891",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4875577,
+            "range": "± 1248344",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19016004,
+            "range": "± 3897544",
             "unit": "ns/iter"
           }
         ]
