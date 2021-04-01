@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617160309944,
+  "lastUpdate": 1617306895006,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -14635,6 +14635,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21546164,
             "range": "± 4411295",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ldm2993593805@163.com",
+            "name": "Donough Liu",
+            "username": "ldm0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b42f21ec3e212ace25331d0c13889a45769e6006",
+          "message": "doc: fix incorrect link in doc (#3670)",
+          "timestamp": "2021-04-01T15:24:29+02:00",
+          "tree_id": "fb0d40136a86ef56c7986472a255b8cea4cb3d83",
+          "url": "https://github.com/timbrehifi/tokio/commit/b42f21ec3e212ace25331d0c13889a45769e6006"
+        },
+        "date": 1617306893290,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 188036,
+            "range": "± 47041",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 676920,
+            "range": "± 128980",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4581715,
+            "range": "± 1035179",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19332066,
+            "range": "± 3614938",
             "unit": "ns/iter"
           }
         ]
