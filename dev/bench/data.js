@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617306985039,
+  "lastUpdate": 1617576796013,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -14737,6 +14737,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19332066,
             "range": "± 3614938",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "danielmckenna93@gmail.com",
+            "name": "xd009642",
+            "username": "xd009642"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f93bc9bad1e1a92328c62947e00e93c92e3b7614",
+          "message": "sync: don't panic in oneshot::try_recv (#3674)",
+          "timestamp": "2021-04-04T20:03:00+02:00",
+          "tree_id": "51e8051ba4803b9910277fbf41124f1e365c9126",
+          "url": "https://github.com/timbrehifi/tokio/commit/f93bc9bad1e1a92328c62947e00e93c92e3b7614"
+        },
+        "date": 1617576794487,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 181219,
+            "range": "± 29055",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 697825,
+            "range": "± 122538",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5083657,
+            "range": "± 1430628",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18664456,
+            "range": "± 3094345",
             "unit": "ns/iter"
           }
         ]
