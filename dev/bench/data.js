@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617684654231,
+  "lastUpdate": 1617727837517,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -14941,6 +14941,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19588785,
             "range": "± 2567223",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@lucaszanella.com",
+            "name": "Lucas Zanela",
+            "username": "lucaszanella"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0074b963b8ef02308e6367c8edd5c9d210c9038d",
+          "message": "doc: add features = \"full\" to readme (#3680)",
+          "timestamp": "2021-04-06T11:03:21+02:00",
+          "tree_id": "311075a61ef9a0e34f66c0e8b7b2004beab39280",
+          "url": "https://github.com/timbrehifi/tokio/commit/0074b963b8ef02308e6367c8edd5c9d210c9038d"
+        },
+        "date": 1617727835394,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 198875,
+            "range": "± 18758",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 732381,
+            "range": "± 95456",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5166590,
+            "range": "± 1154581",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20352463,
+            "range": "± 3083255",
             "unit": "ns/iter"
           }
         ]
