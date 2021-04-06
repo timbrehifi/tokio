@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617727929494,
+  "lastUpdate": 1617727936061,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -22821,6 +22821,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 498,
             "range": "± 13",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@lucaszanella.com",
+            "name": "Lucas Zanela",
+            "username": "lucaszanella"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0074b963b8ef02308e6367c8edd5c9d210c9038d",
+          "message": "doc: add features = \"full\" to readme (#3680)",
+          "timestamp": "2021-04-06T11:03:21+02:00",
+          "tree_id": "311075a61ef9a0e34f66c0e8b7b2004beab39280",
+          "url": "https://github.com/timbrehifi/tokio/commit/0074b963b8ef02308e6367c8edd5c9d210c9038d"
+        },
+        "date": 1617727934431,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 967,
+            "range": "± 206",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 12952,
+            "range": "± 4413",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 953,
+            "range": "± 135",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13443,
+            "range": "± 4707",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 531,
+            "range": "± 198",
             "unit": "ns/iter"
           }
         ]
