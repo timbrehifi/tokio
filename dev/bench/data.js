@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617836008240,
+  "lastUpdate": 1617836012156,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -15043,6 +15043,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20352463,
             "range": "± 3083255",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "zaharidichev@gmail.com",
+            "name": "Zahari Dichev",
+            "username": "zaharidichev"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e89c8981f151a667bb676213d38b7dbeb51620e9",
+          "message": "sync: allow configuring RwLock max reads (#3644)",
+          "timestamp": "2021-04-07T20:44:29+02:00",
+          "tree_id": "ee38c1631f111f7445f805c64d7aabc03e6276fe",
+          "url": "https://github.com/timbrehifi/tokio/commit/e89c8981f151a667bb676213d38b7dbeb51620e9"
+        },
+        "date": 1617836007246,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 207996,
+            "range": "± 31226",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 755883,
+            "range": "± 131764",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4985267,
+            "range": "± 1118144",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20912046,
+            "range": "± 4621516",
             "unit": "ns/iter"
           }
         ]
