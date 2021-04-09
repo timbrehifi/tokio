@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617940074508,
+  "lastUpdate": 1617940128529,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -35753,6 +35753,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 704020,
             "range": "± 93952",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "udoprog@tedro.se",
+            "name": "John-John Tedro",
+            "username": "udoprog"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1a72b28f538f812bec50d7d1921946c653282d31",
+          "message": "rt: fix panic in JoinHandle::abort() when called from other thread (#3672)\n\nWhen aborting a task registered with a current-thread scheduler from off runtime, the tasks may not\r\nbe immediately unlinked from the runtime. Instead, send a message to the runtime, notifying it to\r\nremove the aborted task.\r\n\r\nFixes #3662",
+          "timestamp": "2021-04-08T13:49:39-07:00",
+          "tree_id": "2fa96fb932d59bec463aa14b20b323b7bfc2e9b8",
+          "url": "https://github.com/timbrehifi/tokio/commit/1a72b28f538f812bec50d7d1921946c653282d31"
+        },
+        "date": 1617940126803,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6820617,
+            "range": "± 2303230",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6765768,
+            "range": "± 1473758",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6401632,
+            "range": "± 2398472",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 619,
+            "range": "± 9",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 614,
+            "range": "± 28",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 614,
+            "range": "± 15",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 82025,
+            "range": "± 6215",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1423,
+            "range": "± 82",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1126429,
+            "range": "± 20171",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 824080,
+            "range": "± 23476",
             "unit": "ns/iter"
           }
         ]
