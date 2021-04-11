@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617940140646,
+  "lastUpdate": 1618177835285,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -23343,6 +23343,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 564,
             "range": "± 122",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "david.pdrsn@gmail.com",
+            "name": "David Pedersen",
+            "username": "davidpdrsn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "28d68798973fbfaab889d73c4da7cbc2d5a0e2f8",
+          "message": "macros: forward input arguments in `#[tokio::test]` (#3691)\n\nFixes #2388\r\n\r\nPreviously `#[tokio::test]` would error on functions that took\r\narguments. That meant other attribute macros couldn't do further\r\ntransformations on them. This changes that so arguments are forwarded as\r\nis.\r\n\r\nWhatever else might be included on the function is forwarded as well.\r\nFor example return type, generics, etc.\r\n\r\nWorth noting that this is only for compatibility with other macros.\r\n`#[test]`s that take arguments will still fail to compile.\r\n\r\nA bit odd that [trybuild] tests don't fail `#[test]` functions with\r\narguments which is why the new tests are run with `t.pass(...)`. They do\r\nactually fail if part of a real crate.\r\n\r\n[trybuild]: https://crates.io/crates/trybuild",
+          "timestamp": "2021-04-11T20:39:05+02:00",
+          "tree_id": "c50965c227bfc40bef8ff305d46f85318e04397d",
+          "url": "https://github.com/timbrehifi/tokio/commit/28d68798973fbfaab889d73c4da7cbc2d5a0e2f8"
+        },
+        "date": 1618177833144,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 814,
+            "range": "± 259",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 13589,
+            "range": "± 3659",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 927,
+            "range": "± 328",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14149,
+            "range": "± 3689",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 481,
+            "range": "± 87",
             "unit": "ns/iter"
           }
         ]
