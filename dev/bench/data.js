@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618242381782,
+  "lastUpdate": 1618242396713,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -15505,6 +15505,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18742897,
             "range": "± 3840701",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3a02d34d3a223244d8f880d87936059935313b66",
+          "message": "sync: document that Semaphore is fair (#3693)",
+          "timestamp": "2021-04-12T15:46:42+02:00",
+          "tree_id": "2f6861487893a8c1902d5241ed63138e75ca03ba",
+          "url": "https://github.com/timbrehifi/tokio/commit/3a02d34d3a223244d8f880d87936059935313b66"
+        },
+        "date": 1618242392639,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 211821,
+            "range": "± 66008",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 733118,
+            "range": "± 189785",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5138494,
+            "range": "± 1700300",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21061852,
+            "range": "± 3551335",
             "unit": "ns/iter"
           }
         ]
