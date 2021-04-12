@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618177880785,
+  "lastUpdate": 1618242369136,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -23499,6 +23499,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 481,
             "range": "± 87",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3a02d34d3a223244d8f880d87936059935313b66",
+          "message": "sync: document that Semaphore is fair (#3693)",
+          "timestamp": "2021-04-12T15:46:42+02:00",
+          "tree_id": "2f6861487893a8c1902d5241ed63138e75ca03ba",
+          "url": "https://github.com/timbrehifi/tokio/commit/3a02d34d3a223244d8f880d87936059935313b66"
+        },
+        "date": 1618242367147,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1048,
+            "range": "± 84",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 15013,
+            "range": "± 3079",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1071,
+            "range": "± 31",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14834,
+            "range": "± 2595",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 648,
+            "range": "± 31",
             "unit": "ns/iter"
           }
         ]
