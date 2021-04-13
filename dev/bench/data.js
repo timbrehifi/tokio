@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618307331488,
+  "lastUpdate": 1618307335373,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -15655,6 +15655,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20661730,
             "range": "± 2819461",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "liaoymxsdl@sina.com",
+            "name": "baoyachi. Aka Rust Hairy crabs",
+            "username": "baoyachi"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cab4a592ac1f122a988b8a81a235bb4eccb22db7",
+          "message": "chore: update version in README.md (#3698)",
+          "timestamp": "2021-04-13T16:17:14+09:00",
+          "tree_id": "2e4adee4ef6d23e792a4515550adfb47976f3dad",
+          "url": "https://github.com/timbrehifi/tokio/commit/cab4a592ac1f122a988b8a81a235bb4eccb22db7"
+        },
+        "date": 1618307331079,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 197581,
+            "range": "± 37544",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 727815,
+            "range": "± 103569",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5367265,
+            "range": "± 896192",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20112131,
+            "range": "± 3256512",
             "unit": "ns/iter"
           }
         ]
