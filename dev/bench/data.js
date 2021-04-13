@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618307347578,
+  "lastUpdate": 1618307353864,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -36821,6 +36821,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 753890,
             "range": "± 102631",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "liaoymxsdl@sina.com",
+            "name": "baoyachi. Aka Rust Hairy crabs",
+            "username": "baoyachi"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cab4a592ac1f122a988b8a81a235bb4eccb22db7",
+          "message": "chore: update version in README.md (#3698)",
+          "timestamp": "2021-04-13T16:17:14+09:00",
+          "tree_id": "2e4adee4ef6d23e792a4515550adfb47976f3dad",
+          "url": "https://github.com/timbrehifi/tokio/commit/cab4a592ac1f122a988b8a81a235bb4eccb22db7"
+        },
+        "date": 1618307351416,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6412981,
+            "range": "± 2886424",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6278483,
+            "range": "± 2212740",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6053030,
+            "range": "± 3173620",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 880,
+            "range": "± 111",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 859,
+            "range": "± 183",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 861,
+            "range": "± 223",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 132175,
+            "range": "± 34925",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1723,
+            "range": "± 303",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1116515,
+            "range": "± 75610",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 802003,
+            "range": "± 53951",
             "unit": "ns/iter"
           }
         ]
