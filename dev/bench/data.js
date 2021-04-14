@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618307353864,
+  "lastUpdate": 1618438335418,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -15757,6 +15757,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20112131,
             "range": "± 3256512",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ecameron@bluecatnetworks.com",
+            "name": "Evan Cameron",
+            "username": "leshow"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9eeec039f200c42099e0471f2a216a679dce397e",
+          "message": "util: make UdpFramed take Borrow<UdpSocket> (#3451)",
+          "timestamp": "2021-04-14T20:16:23+02:00",
+          "tree_id": "04ee3c7c8df16f2004d778a5094b2064a95f6f04",
+          "url": "https://github.com/timbrehifi/tokio/commit/9eeec039f200c42099e0471f2a216a679dce397e"
+        },
+        "date": 1618438332922,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 185911,
+            "range": "± 48825",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 669248,
+            "range": "± 208615",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5222741,
+            "range": "± 1494725",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20959043,
+            "range": "± 3417554",
             "unit": "ns/iter"
           }
         ]
