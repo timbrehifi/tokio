@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618523200293,
+  "lastUpdate": 1619086073592,
   "repoUrl": "https://github.com/timbrehifi/tokio",
   "entries": {
     "sync_semaphore": [
@@ -24279,6 +24279,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 615,
             "range": "± 484",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2b9b55810847b4c7855e3de82f432ca997600f30",
+          "message": "time: prevent `time::advance` from going too far (#3712)\n\nPreviously, `time::advance` would set the mocked clock forward the\r\nrequested amount, then yield. However, if there was no work ready to\r\nperform immediately, this would result in advancing to the next expiring\r\nsleep.\r\n\r\nNow, `time::advance(...)` will unblock at the requested time. The\r\ndifference between `time::advance(...)` and `time::sleep(...)` is a bit\r\nfuzzy. The main difference is `time::sleep(...)` operates on the current\r\ntask and `time::advance(...)` operates at the runtime level.\r\n\r\nFixes #3710",
+          "timestamp": "2021-04-21T15:23:35-07:00",
+          "tree_id": "6e5d0c6d86afdeaee3700f2851df5e78bfe7f8a4",
+          "url": "https://github.com/timbrehifi/tokio/commit/2b9b55810847b4c7855e3de82f432ca997600f30"
+        },
+        "date": 1619086070774,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1043,
+            "range": "± 64",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 16657,
+            "range": "± 5799",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1071,
+            "range": "± 111",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 15828,
+            "range": "± 5381",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 593,
+            "range": "± 176",
             "unit": "ns/iter"
           }
         ]
