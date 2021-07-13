@@ -1,6 +1,6 @@
 use proc_macro::TokenStream;
 use proc_macro2::Span;
-use quote::quote;
+use quote::{quote, quote_spanned, ToTokens};
 
 #[derive(Clone, Copy, PartialEq)]
 enum RuntimeFlavor {
@@ -201,12 +201,15 @@ fn parse_knobs(
     for arg in args {
         match arg {
             syn::NestedMeta::Meta(syn::Meta::NameValue(namevalue)) => {
-                let ident = namevalue.path.get_ident();
-                if ident.is_none() {
-                    let msg = "Must have specified ident";
-                    return Err(syn::Error::new_spanned(namevalue, msg));
-                }
-                match ident.unwrap().to_string().to_lowercase().as_str() {
+                let ident = namevalue
+                    .path
+                    .get_ident()
+                    .ok_or_else(|| {
+                        syn::Error::new_spanned(&namevalue, "Must have specified ident")
+                    })?
+                    .to_string()
+                    .to_lowercase();
+                match ident.as_str() {
                     "worker_threads" => {
                         config.set_worker_threads(
                             namevalue.lit.clone(),
@@ -239,12 +242,11 @@ fn parse_knobs(
                 }
             }
             syn::NestedMeta::Meta(syn::Meta::Path(path)) => {
-                let ident = path.get_ident();
-                if ident.is_none() {
-                    let msg = "Must have specified ident";
-                    return Err(syn::Error::new_spanned(path, msg));
-                }
-                let name = ident.unwrap().to_string().to_lowercase();
+                let name = path
+                    .get_ident()
+                    .ok_or_else(|| syn::Error::new_spanned(&path, "Must have specified ident"))?
+                    .to_string()
+                    .to_lowercase();
                 let msg = match name.as_str() {
                     "threaded_scheduler" | "multi_thread" => {
                         format!(
@@ -278,11 +280,29 @@ fn parse_knobs(
 
     let config = config.build()?;
 
+    // If type mismatch occurs, the current rustc points to the last statement.
+    let (last_stmt_start_span, last_stmt_end_span) = {
+        let mut last_stmt = input
+            .block
+            .stmts
+            .last()
+            .map(ToTokens::into_token_stream)
+            .unwrap_or_default()
+            .into_iter();
+        // `Span` on stable Rust has a limitation that only points to the first
+        // token, not the whole tokens. We can work around this limitation by
+        // using the first/last span of the tokens like
+        // `syn::Error::new_spanned` does.
+        let start = last_stmt.next().map_or_else(Span::call_site, |t| t.span());
+        let end = last_stmt.last().map_or(start, |t| t.span());
+        (start, end)
+    };
+
     let mut rt = match config.flavor {
-        RuntimeFlavor::CurrentThread => quote! {
+        RuntimeFlavor::CurrentThread => quote_spanned! {last_stmt_start_span=>
             tokio::runtime::Builder::new_current_thread()
         },
-        RuntimeFlavor::Threaded => quote! {
+        RuntimeFlavor::Threaded => quote_spanned! {last_stmt_start_span=>
             tokio::runtime::Builder::new_multi_thread()
         },
     };
@@ -302,15 +322,18 @@ fn parse_knobs(
     };
 
     let body = &input.block;
-    input.block = syn::parse_quote! {
+    let brace_token = input.block.brace_token;
+    input.block = syn::parse2(quote_spanned! {last_stmt_end_span=>
         {
             #rt
                 .enable_all()
                 .build()
-                .unwrap()
+                .expect("Failed building the Runtime")
                 .block_on(async #body)
         }
-    };
+    })
+    .expect("Parsing failure");
+    input.block.brace_token = brace_token;
 
     let result = quote! {
         #header
